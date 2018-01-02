@@ -23,17 +23,17 @@ let font_size_for_month = 3*radius
 let font_style_for_month = `font-family:\'Helvetica\';font-size:${font_size_for_month}px;fill:rgb(102,102,102);`
 
 
-var day = new Date(year, month, 1);
-var first_day = moment(day);
-first_weekday = first_day.format('d')
-first_week_of_the_month = first_day.format('w')
-file_name = first_day.format('YYYYMMM')
-month_name = first_day.format("MMMM, YYYY")
-last_day_of_the_month = first_day.daysInMonth()
+let day = new Date(year, month, 1);
+let first_day = moment(day);
+let first_weekday = first_day.format('d')
+let first_week_of_the_month = first_day.format('w')
+let file_name = first_day.format('YYYYMMM')
+let month_name = first_day.format("MMMM, YYYY")
+let last_day_of_the_month = first_day.daysInMonth()
 console.log(`START !!! my date: ${day} my week: ${first_week_of_the_month}, my day: ${first_weekday}"`)
 
 
-let svg = ""
+var svg = ""
 svg += '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
 svg += '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n'
 
