@@ -36,11 +36,10 @@ f.write('<svg width="100%%" height="100%%" viewBox="0 0 %s %s" xmlns="http://www
 
 f.write('\t<g transform="translate(%s, %s)" style="%s">\n' % ((radius/2), (viewBoxHeight/4), outline_style_for_day))
 for x in range(0, day_range_of_the_month[1]):
-    #print x
     my_date = datetime.date(year, month, x+1)
     my_weekday = int(my_date.strftime("%w")) #Sunday = 0
     my_week = int(int(my_date.strftime("%U")) - int(first_week_of_the_month))
-    print ("my day: %s, my week: %s, my day: %s") % (x+1, my_week, my_weekday)
+    #print ("my day: %s, my week: %s, my day: %s") % (x+1, my_week, my_weekday)
     my_x = centerX + day_xmargin + (my_weekday * ((radius*2)+day_xmargin))
     my_date_x = my_x + day_xmargin/2
     my_y = centerY + (my_week * ((radius*2)+day_ymargin))
