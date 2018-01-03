@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="15" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="40" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="65" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="90" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="115" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="140" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="165" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="190" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="215" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="240" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="265" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+	<circle cx="290" cy="15" r="10" style="fill:rgb(200,200,255);"/>
+</svg>
