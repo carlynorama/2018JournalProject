@@ -12,18 +12,18 @@ let calendarHeight = 2600
 let contentLeftMargin = (viewBoxWidth-calendarWidth) / 2
 let contentTopMargin = 2 * viewBoxHeight / 15
 
-let radius = calendarWidth/63
+let radius = calendarWidth/57
 let day_xmargin = radius/3
 let day_ymargin = radius/3
 let outline_style_for_day = "fill:rgb(220,230,255);"
 let font_size_for_day = radius
 let font_style_for_day = `font-family:\'Helvetica\';font-size:${font_size_for_day}px;fill:rgb(51,51,51);`
-let font_size_for_month = 3*radius
+let font_size_for_month = radius*2
 let font_style_for_month = `font-family:\'Helvetica\';font-size:${font_size_for_month}px;fill:rgb(102,102,102);`
 let font_size_for_title = radius*4
 let font_style_for_title = `font-family:\'Helvetica\';font-size:${font_size_for_title}px;fill:rgb(102,102,102);`
 
-let file_name = year
+let file_name = `${year}_yaag_jsgen`
 let page_title = year
 
 let days_of_the_week = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
@@ -47,7 +47,7 @@ for (let m=0; m < 12; m++) {
     let month = m
     let month_x_offset = (month)%3 * (calendarWidth/3 + (2*radius))
     let month_y_offset = Math.trunc(month/3) * (calendarHeight/4 + (2*radius))
-    console.log(`${month}: (${month_x_offset}, ${month_y_offset})`)
+    //console.log(`${month}: (${month_x_offset}, ${month_y_offset})`)
     let day = new Date(year, m, 1);
     let first_day = moment(day);
     let first_weekday = first_day.format('d')
@@ -70,7 +70,18 @@ for (let m=0; m < 12; m++) {
         let my_date = new Date(year, month, my_day)
         let my_moment = moment(my_date)
         let my_weekday = my_moment.format('d')
-        let my_week = my_moment.format('w') - first_week_of_the_month + 1
+
+        //catches 5th week in December error w/o causing weird March error
+        var my_week = 0
+        if ((month == 11) && (my_moment.format('w') < first_week_of_the_month)) {
+            my_week = parseInt(my_moment.format('w')) + 52 - first_week_of_the_month + 1
+        } else {
+            my_week = (my_moment.format('w') - first_week_of_the_month) + 1
+        }
+
+        //let my_week = (my_moment.format('w') - first_week_of_the_month) + 1
+        console.log(`my week: ${my_moment.format('w')}, first week: ${first_week_of_the_month}, calc'd: ${my_week}"`)
+
         //console.log(`my date: ${my_date} my week: ${my_week}, my day: ${my_weekday}"`)
 
         let my_x = (my_weekday * ((radius*2)+day_xmargin)) + radius
