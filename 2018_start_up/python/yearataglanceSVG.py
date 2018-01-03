@@ -1,4 +1,4 @@
-#calendarSVG.py
+#yearataglanceSVG.py
 
 import datetime
 import calendar
