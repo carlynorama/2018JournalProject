@@ -25,7 +25,7 @@ font_style_for_month = "font-family:\'Helvetica\';font-size:%spx;fill:rgb(102,10
 font_size_for_title = int(radius)*4
 font_style_for_title = "font-family:\'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_title
 
-file_name = year
+file_name = "%s_yaag_pygen" % year
 page_title = year
 
 days_of_the_week = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
