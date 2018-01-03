@@ -59,9 +59,6 @@ for (let x = 0; x < last_day_of_the_month; x++) {
     svg += `\t<circle cx="${my_x}" cy="${my_y}" r="${radius}"/>\n`
     svg += `\t<text x="${my_dayoftheweek_x}" y="${my_date_y}" style="${font_style_for_day}" dominant-baseline="central">${my_weekday}</text>\n`
     svg += `\t<text x="${my_date_x}" y="${my_date_y}" style="${font_style_for_day}" dominant-baseline="central">${my_date_text}</text>\n`
-
-
-    //svg += `\t<circle cx="${centerX+(x*((radius*2)+5))}" cy="${centerY}" r="${radius}" style="${outline_style_for_day}"/>\n`
 }
 svg += '\t</g>\n'
 
