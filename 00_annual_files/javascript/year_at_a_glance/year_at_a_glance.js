@@ -34,6 +34,7 @@ svg += '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphi
 
 svg += `<svg width="100%" height="100%" viewBox="0 0 ${viewBoxWidth} ${viewBoxHeight}" xmlns="http://www.w3.org/2000/svg">\n`
 
+//doesn't work in Affinity Designer, baselines neither
 svg += `<style>/* <![CDATA[ */circle{${outline_style_for_day}}/* ]]> */</style>\n` //% outline_style_for_day)
 
 let title_x_offset = viewBoxWidth/2
