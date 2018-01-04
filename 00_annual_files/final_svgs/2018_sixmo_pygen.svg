@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 3300 2550" xmlns="http://www.w3.org/2000/svg">
+ <style>/* <![CDATA[ */circle{fill:rgb(220,230,255);}/* ]]> */</style>
+	<g id="page_title" transform="translate(75, 178.0)">
+		<text x="0" y="0" style="font-family:'Futura';font-size:108px;fill:rgb(102,102,102);" text-anchor="left">Future Planning - 2018</text>
+		</g>
+<g id="calendar" width="2900" height="2100" transform="translate(75, 340)">
+		<g id="January" transform="translate(0.0, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.619047619" y="54" style="font-family:'Futura';font-size:54px;fill:rgb(102,102,102);" text-anchor="left">January</text>
+			<g id="minical" transform="translate(0, 162)" text-anchor="middle">
+				<g id="January_weekbar" transform="translate(0, 0)" style="font-family:'Helvetica';font-weight='bold';font-size:27px;fill:rgb(51,51,51);" text-anchor="middle">
+					<text x="55.2380952381" y="0">S</text>
+					<text x="119.682539683" y="0">M</text>
+					<text x="184.126984127" y="0">T</text>
+					<text x="248.571428571" y="0">W</text>
+					<text x="313.015873016" y="0">T</text>
+					<text x="377.46031746" y="0">F</text>
+					<text x="441.904761905" y="0">S</text>
+				</g>
+				<g id="January_days" transform="translate(0, 0)" text-anchor="middle" dominant-baseline="central" style="font-family:'Helvetica';font-size:27px;fill:rgb(102,102,102);" >
+					<text x="119.682539683" y="64.4444444444">01</text>
+					<text x="184.126984127" y="64.4444444444">02</text>
+					<text x="248.571428571" y="64.4444444444">03</text>
+					<text x="313.015873016" y="64.4444444444">04</text>
+					<text x="377.46031746" y="64.4444444444">05</text>
+					<text x="441.904761905" y="64.4444444444">06</text>
+					<text x="55.2380952381" y="128.888888889">07</text>
+					<text x="119.682539683" y="128.888888889">08</text>
+					<text x="184.126984127" y="128.888888889">09</text>
+					<text x="248.571428571" y="128.888888889">10</text>
+					<text x="313.015873016" y="128.888888889">11</text>
+					<text x="377.46031746" y="128.888888889">12</text>
+					<text x="441.904761905" y="128.888888889">13</text>
+					<text x="55.2380952381" y="193.333333333">14</text>
+					<text x="119.682539683" y="193.333333333">15</text>
+					<text x="184.126984127" y="193.333333333">16</text>
+					<text x="248.571428571" y="193.333333333">17</text>
+					<text x="313.015873016" y="193.333333333">18</text>
+					<text x="377.46031746" y="193.333333333">19</text>
+					<text x="441.904761905" y="193.333333333">20</text>
+					<text x="55.2380952381" y="257.777777778">21</text>
+					<text x="119.682539683" y="257.777777778">22</text>
+					<text x="184.126984127" y="257.777777778">23</text>
+					<text x="248.571428571" y="257.777777778">24</text>
+					<text x="313.015873016" y="257.777777778">25</text>
+					<text x="377.46031746" y="257.777777778">26</text>
+					<text x="441.904761905" y="257.777777778">27</text>
+					<text x="55.2380952381" y="322.222222222">28</text>
+					<text x="119.682539683" y="322.222222222">29</text>
+					<text x="184.126984127" y="322.222222222">30</text>
+					<text x="248.571428571" y="322.222222222">31</text>
+				</g>
+		</g>
+		</g>
+		<g id="February" transform="translate(538.238095238, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.619047619" y="54" style="font-family:'Futura';font-size:54px;fill:rgb(102,102,102);" text-anchor="left">February</text>
+			<g id="minical" transform="translate(0, 162)" text-anchor="middle">
+				<g id="February_weekbar" transform="translate(0, 0)" style="font-family:'Helvetica';font-weight='bold';font-size:27px;fill:rgb(51,51,51);" text-anchor="middle">
+					<text x="55.2380952381" y="0">S</text>
+					<text x="119.682539683" y="0">M</text>
+					<text x="184.126984127" y="0">T</text>
+					<text x="248.571428571" y="0">W</text>
+					<text x="313.015873016" y="0">T</text>
+					<text x="377.46031746" y="0">F</text>
+					<text x="441.904761905" y="0">S</text>
+				</g>
+				<g id="February_days" transform="translate(0, 0)" text-anchor="middle" dominant-baseline="central" style="font-family:'Helvetica';font-size:27px;fill:rgb(102,102,102);" >
+					<text x="313.015873016" y="64.4444444444">01</text>
+					<text x="377.46031746" y="64.4444444444">02</text>
+					<text x="441.904761905" y="64.4444444444">03</text>
+					<text x="55.2380952381" y="128.888888889">04</text>
+					<text x="119.682539683" y="128.888888889">05</text>
+					<text x="184.126984127" y="128.888888889">06</text>
+					<text x="248.571428571" y="128.888888889">07</text>
+					<text x="313.015873016" y="128.888888889">08</text>
+					<text x="377.46031746" y="128.888888889">09</text>
+					<text x="441.904761905" y="128.888888889">10</text>
+					<text x="55.2380952381" y="193.333333333">11</text>
+					<text x="119.682539683" y="193.333333333">12</text>
+					<text x="184.126984127" y="193.333333333">13</text>
+					<text x="248.571428571" y="193.333333333">14</text>
+					<text x="313.015873016" y="193.333333333">15</text>
+					<text x="377.46031746" y="193.333333333">16</text>
+					<text x="441.904761905" y="193.333333333">17</text>
+					<text x="55.2380952381" y="257.777777778">18</text>
+					<text x="119.682539683" y="257.777777778">19</text>
+					<text x="184.126984127" y="257.777777778">20</text>
+					<text x="248.571428571" y="257.777777778">21</text>
+					<text x="313.015873016" y="257.777777778">22</text>
+					<text x="377.46031746" y="257.777777778">23</text>
+					<text x="441.904761905" y="257.777777778">24</text>
+					<text x="55.2380952381" y="322.222222222">25</text>
+					<text x="119.682539683" y="322.222222222">26</text>
+					<text x="184.126984127" y="322.222222222">27</text>
+					<text x="248.571428571" y="322.222222222">28</text>
+				</g>
+		</g>
+		</g>
+		<g id="March" transform="translate(1076.47619048, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.619047619" y="54" style="font-family:'Futura';font-size:54px;fill:rgb(102,102,102);" text-anchor="left">March</text>
+			<g id="minical" transform="translate(0, 162)" text-anchor="middle">
+				<g id="March_weekbar" transform="translate(0, 0)" style="font-family:'Helvetica';font-weight='bold';font-size:27px;fill:rgb(51,51,51);" text-anchor="middle">
+					<text x="55.2380952381" y="0">S</text>
+					<text x="119.682539683" y="0">M</text>
+					<text x="184.126984127" y="0">T</text>
+					<text x="248.571428571" y="0">W</text>
+					<text x="313.015873016" y="0">T</text>
+					<text x="377.46031746" y="0">F</text>
+					<text x="441.904761905" y="0">S</text>
+				</g>
+				<g id="March_days" transform="translate(0, 0)" text-anchor="middle" dominant-baseline="central" style="font-family:'Helvetica';font-size:27px;fill:rgb(102,102,102);" >
+					<text x="313.015873016" y="64.4444444444">01</text>
+					<text x="377.46031746" y="64.4444444444">02</text>
+					<text x="441.904761905" y="64.4444444444">03</text>
+					<text x="55.2380952381" y="128.888888889">04</text>
+					<text x="119.682539683" y="128.888888889">05</text>
+					<text x="184.126984127" y="128.888888889">06</text>
+					<text x="248.571428571" y="128.888888889">07</text>
+					<text x="313.015873016" y="128.888888889">08</text>
+					<text x="377.46031746" y="128.888888889">09</text>
+					<text x="441.904761905" y="128.888888889">10</text>
+					<text x="55.2380952381" y="193.333333333">11</text>
+					<text x="119.682539683" y="193.333333333">12</text>
+					<text x="184.126984127" y="193.333333333">13</text>
+					<text x="248.571428571" y="193.333333333">14</text>
+					<text x="313.015873016" y="193.333333333">15</text>
+					<text x="377.46031746" y="193.333333333">16</text>
+					<text x="441.904761905" y="193.333333333">17</text>
+					<text x="55.2380952381" y="257.777777778">18</text>
+					<text x="119.682539683" y="257.777777778">19</text>
+					<text x="184.126984127" y="257.777777778">20</text>
+					<text x="248.571428571" y="257.777777778">21</text>
+					<text x="313.015873016" y="257.777777778">22</text>
+					<text x="377.46031746" y="257.777777778">23</text>
+					<text x="441.904761905" y="257.777777778">24</text>
+					<text x="55.2380952381" y="322.222222222">25</text>
+					<text x="119.682539683" y="322.222222222">26</text>
+					<text x="184.126984127" y="322.222222222">27</text>
+					<text x="248.571428571" y="322.222222222">28</text>
+					<text x="313.015873016" y="322.222222222">29</text>
+					<text x="377.46031746" y="322.222222222">30</text>
+					<text x="441.904761905" y="322.222222222">31</text>
+				</g>
+		</g>
+		</g>
+		<g id="April" transform="translate(1614.71428571, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.619047619" y="54" style="font-family:'Futura';font-size:54px;fill:rgb(102,102,102);" text-anchor="left">April</text>
+			<g id="minical" transform="translate(0, 162)" text-anchor="middle">
+				<g id="April_weekbar" transform="translate(0, 0)" style="font-family:'Helvetica';font-weight='bold';font-size:27px;fill:rgb(51,51,51);" text-anchor="middle">
+					<text x="55.2380952381" y="0">S</text>
+					<text x="119.682539683" y="0">M</text>
+					<text x="184.126984127" y="0">T</text>
+					<text x="248.571428571" y="0">W</text>
+					<text x="313.015873016" y="0">T</text>
+					<text x="377.46031746" y="0">F</text>
+					<text x="441.904761905" y="0">S</text>
+				</g>
+				<g id="April_days" transform="translate(0, 0)" text-anchor="middle" dominant-baseline="central" style="font-family:'Helvetica';font-size:27px;fill:rgb(102,102,102);" >
+					<text x="55.2380952381" y="64.4444444444">01</text>
+					<text x="119.682539683" y="64.4444444444">02</text>
+					<text x="184.126984127" y="64.4444444444">03</text>
+					<text x="248.571428571" y="64.4444444444">04</text>
+					<text x="313.015873016" y="64.4444444444">05</text>
+					<text x="377.46031746" y="64.4444444444">06</text>
+					<text x="441.904761905" y="64.4444444444">07</text>
+					<text x="55.2380952381" y="128.888888889">08</text>
+					<text x="119.682539683" y="128.888888889">09</text>
+					<text x="184.126984127" y="128.888888889">10</text>
+					<text x="248.571428571" y="128.888888889">11</text>
+					<text x="313.015873016" y="128.888888889">12</text>
+					<text x="377.46031746" y="128.888888889">13</text>
+					<text x="441.904761905" y="128.888888889">14</text>
+					<text x="55.2380952381" y="193.333333333">15</text>
+					<text x="119.682539683" y="193.333333333">16</text>
+					<text x="184.126984127" y="193.333333333">17</text>
+					<text x="248.571428571" y="193.333333333">18</text>
+					<text x="313.015873016" y="193.333333333">19</text>
+					<text x="377.46031746" y="193.333333333">20</text>
+					<text x="441.904761905" y="193.333333333">21</text>
+					<text x="55.2380952381" y="257.777777778">22</text>
+					<text x="119.682539683" y="257.777777778">23</text>
+					<text x="184.126984127" y="257.777777778">24</text>
+					<text x="248.571428571" y="257.777777778">25</text>
+					<text x="313.015873016" y="257.777777778">26</text>
+					<text x="377.46031746" y="257.777777778">27</text>
+					<text x="441.904761905" y="257.777777778">28</text>
+					<text x="55.2380952381" y="322.222222222">29</text>
+					<text x="119.682539683" y="322.222222222">30</text>
+				</g>
+		</g>
+		</g>
+		<g id="May" transform="translate(2152.95238095, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.619047619" y="54" style="font-family:'Futura';font-size:54px;fill:rgb(102,102,102);" text-anchor="left">May</text>
+			<g id="minical" transform="translate(0, 162)" text-anchor="middle">
+				<g id="May_weekbar" transform="translate(0, 0)" style="font-family:'Helvetica';font-weight='bold';font-size:27px;fill:rgb(51,51,51);" text-anchor="middle">
+					<text x="55.2380952381" y="0">S</text>
+					<text x="119.682539683" y="0">M</text>
+					<text x="184.126984127" y="0">T</text>
+					<text x="248.571428571" y="0">W</text>
+					<text x="313.015873016" y="0">T</text>
+					<text x="377.46031746" y="0">F</text>
+					<text x="441.904761905" y="0">S</text>
+				</g>
+				<g id="May_days" transform="translate(0, 0)" text-anchor="middle" dominant-baseline="central" style="font-family:'Helvetica';font-size:27px;fill:rgb(102,102,102);" >
+					<text x="184.126984127" y="64.4444444444">01</text>
+					<text x="248.571428571" y="64.4444444444">02</text>
+					<text x="313.015873016" y="64.4444444444">03</text>
+					<text x="377.46031746" y="64.4444444444">04</text>
+					<text x="441.904761905" y="64.4444444444">05</text>
+					<text x="55.2380952381" y="128.888888889">06</text>
+					<text x="119.682539683" y="128.888888889">07</text>
+					<text x="184.126984127" y="128.888888889">08</text>
+					<text x="248.571428571" y="128.888888889">09</text>
+					<text x="313.015873016" y="128.888888889">10</text>
+					<text x="377.46031746" y="128.888888889">11</text>
+					<text x="441.904761905" y="128.888888889">12</text>
+					<text x="55.2380952381" y="193.333333333">13</text>
+					<text x="119.682539683" y="193.333333333">14</text>
+					<text x="184.126984127" y="193.333333333">15</text>
+					<text x="248.571428571" y="193.333333333">16</text>
+					<text x="313.015873016" y="193.333333333">17</text>
+					<text x="377.46031746" y="193.333333333">18</text>
+					<text x="441.904761905" y="193.333333333">19</text>
+					<text x="55.2380952381" y="257.777777778">20</text>
+					<text x="119.682539683" y="257.777777778">21</text>
+					<text x="184.126984127" y="257.777777778">22</text>
+					<text x="248.571428571" y="257.777777778">23</text>
+					<text x="313.015873016" y="257.777777778">24</text>
+					<text x="377.46031746" y="257.777777778">25</text>
+					<text x="441.904761905" y="257.777777778">26</text>
+					<text x="55.2380952381" y="322.222222222">27</text>
+					<text x="119.682539683" y="322.222222222">28</text>
+					<text x="184.126984127" y="322.222222222">29</text>
+					<text x="248.571428571" y="322.222222222">30</text>
+					<text x="313.015873016" y="322.222222222">31</text>
+				</g>
+		</g>
+		</g>
+		<g id="June" transform="translate(2691.19047619, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.619047619" y="54" style="font-family:'Futura';font-size:54px;fill:rgb(102,102,102);" text-anchor="left">June</text>
+			<g id="minical" transform="translate(0, 162)" text-anchor="middle">
+				<g id="June_weekbar" transform="translate(0, 0)" style="font-family:'Helvetica';font-weight='bold';font-size:27px;fill:rgb(51,51,51);" text-anchor="middle">
+					<text x="55.2380952381" y="0">S</text>
+					<text x="119.682539683" y="0">M</text>
+					<text x="184.126984127" y="0">T</text>
+					<text x="248.571428571" y="0">W</text>
+					<text x="313.015873016" y="0">T</text>
+					<text x="377.46031746" y="0">F</text>
+					<text x="441.904761905" y="0">S</text>
+				</g>
+				<g id="June_days" transform="translate(0, 0)" text-anchor="middle" dominant-baseline="central" style="font-family:'Helvetica';font-size:27px;fill:rgb(102,102,102);" >
+					<text x="377.46031746" y="64.4444444444">01</text>
+					<text x="441.904761905" y="64.4444444444">02</text>
+					<text x="55.2380952381" y="128.888888889">03</text>
+					<text x="119.682539683" y="128.888888889">04</text>
+					<text x="184.126984127" y="128.888888889">05</text>
+					<text x="248.571428571" y="128.888888889">06</text>
+					<text x="313.015873016" y="128.888888889">07</text>
+					<text x="377.46031746" y="128.888888889">08</text>
+					<text x="441.904761905" y="128.888888889">09</text>
+					<text x="55.2380952381" y="193.333333333">10</text>
+					<text x="119.682539683" y="193.333333333">11</text>
+					<text x="184.126984127" y="193.333333333">12</text>
+					<text x="248.571428571" y="193.333333333">13</text>
+					<text x="313.015873016" y="193.333333333">14</text>
+					<text x="377.46031746" y="193.333333333">15</text>
+					<text x="441.904761905" y="193.333333333">16</text>
+					<text x="55.2380952381" y="257.777777778">17</text>
+					<text x="119.682539683" y="257.777777778">18</text>
+					<text x="184.126984127" y="257.777777778">19</text>
+					<text x="248.571428571" y="257.777777778">20</text>
+					<text x="313.015873016" y="257.777777778">21</text>
+					<text x="377.46031746" y="257.777777778">22</text>
+					<text x="441.904761905" y="257.777777778">23</text>
+					<text x="55.2380952381" y="322.222222222">24</text>
+					<text x="119.682539683" y="322.222222222">25</text>
+					<text x="184.126984127" y="322.222222222">26</text>
+					<text x="248.571428571" y="322.222222222">27</text>
+					<text x="313.015873016" y="322.222222222">28</text>
+					<text x="377.46031746" y="322.222222222">29</text>
+					<text x="441.904761905" y="322.222222222">30</text>
+				</g>
+		</g>
+		</g>
+	</g>
+</svg>
