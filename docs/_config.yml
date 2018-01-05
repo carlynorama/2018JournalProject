@@ -1,4 +1,4 @@
-remote_theme: "mmistakes/minimal-mistakes"
+theme: jekyll-theme-minimal
 title: 2018 Journal Project
 description: Learning to generate SVGs with Pthon and Javascript.
 highlighter: rouge

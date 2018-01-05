@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title:  "Getting Started"
 date:   2018-01-03 08:01:01 -0600
 tags: meta
