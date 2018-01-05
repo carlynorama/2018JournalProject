@@ -1,6 +1,6 @@
 # 2018JournalProject
 
-## What this is
+## What's going on here?
 
 Paper organizers work better for me than electronic ones; as soon as I open my computer in the morning, I'm lost. The [Bullet Journal] fills a void that rigid preprinted layouts just can't fill: layouts that match exactly how I think about my day. YouTubers have taken the flexible and accessible system created by [Ryder Carroll] to a [whole new level][1] that honestly overwhelms and intimidates me. So I'm not going to doodle. I'm going to code.
 
@@ -10,7 +10,7 @@ Paper organizers work better for me than electronic ones; as soon as I open my c
 
 ## How it's organized: By Month and By Programming Language.
 
-### Why Each Month?
+### Why each month?
 I don't know what my perfect layouts will be. I don't know what my perfect process will be. It will evolve month by month, so the layouts generated each month will be a little bit tweaked. That said, I want a record of what I learned, what the layouts looked like, and I want to be able to refer back without trolling through git histories.
 
 ### Why multiple languages?
@@ -20,7 +20,7 @@ Why SVG? Well, I want an [AxiDraw] and I need some justifications before I can b
 
 [AxiDraw]: https://www.axidraw.com/
 
-## How to use the Repo
+## How to use the repo
 
 Missing layouts I probably am working with a draft done in Pages. They'll show up eventually.  Got to get some real work done.
 
