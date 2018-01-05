@@ -38,8 +38,8 @@ There are [fancier ways][2] to work with Python, but they aren't needed yet.
 
 ###Javascript
 
-For the javascript code, since I'm using Moment.js, I set up [node with homebrew][3], with some caveats if you run into [trouble with npm][4] (I have not). I'd only bother with the Javascript if node's already your thing.
+For the javascript code, since I'm using [Moment.js], I set up [node with homebrew][3], with some caveats if you run into [trouble with npm][4] (I have not). I'd only bother with the Javascript if node's already your thing.
 
-[Moment.js]: https://momentjs.com 
+[Moment.js]: https://momentjs.com
 [3]: https://changelog.com/posts/install-node-js-with-homebrew-on-os-x
 [4]: https://gist.github.com/rcugut/c7abd2a425bb65da3c61d8341cd4b02d
