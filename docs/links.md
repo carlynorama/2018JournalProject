@@ -12,7 +12,7 @@ title:  "Useful Links"
 - <https://github.com/jekyll/minima#customization>
 
 ## Python 2.7
-- <http://strftime.org/
+- <http://strftime.org/>
 - <https://docs.python.org/2/library/calendar.html>
 - <https://docs.python.org/2/library/datetime.html>
 
