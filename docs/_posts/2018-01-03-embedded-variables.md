@@ -12,9 +12,14 @@ centerX = 15
 centerY = 15
 radius = 10
 style = "fill:rgb(200,200,255);"
+x = 1
 
 message ='\t<circle cx="%s" cy="%s" r="%s" style="%s"/>\n' % (centerX+(x*((radius*2)+5)), centerY, radius, style)
 print(message)
+
+message2 = '\t<circle cx="{}" cy="{}" r="{}" style="{}"/>\n'.format(centerX+(x*((radius*2)+5)), centerY, radius, style)
+print(message2)
+
 {% endhighlight %}
 
 ## Javascript
@@ -23,6 +28,7 @@ let centerX = 15
 let centerY = 15
 let radius = 10
 let style = "fill:rgb(200,200,255);"
+let x = 1
 
 let message = `\t<circle cx="${centerX+(x*((radius*2)+5))}" cy="${centerY}" r="${radius}" style="${style}"/>\n`
 console.log(message)
