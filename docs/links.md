@@ -8,6 +8,9 @@ categories: meta
 ##Markdown and Jekyll
 - https://github.com/krisb/jekyll-template/
 - https://github.com/maciakl/Sample-Jekyll-Site/blob/master/_config.yml
+- https://jekyll.github.io/minima/
+- https://github.com/jekyll/minima
+- https://github.com/jekyll/minima#customization
 
 ##Python 2.7
 - http://strftime.org/
