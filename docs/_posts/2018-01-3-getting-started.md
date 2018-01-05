@@ -1,6 +1,8 @@
 ---
+layout: posts
 title:  "Getting Started"
-date:   2017-01-03 08:01:01 -0600
+date:   2018-01-03 08:01:01 -0600
+tags: meta
 ---
 
 Very first code:
