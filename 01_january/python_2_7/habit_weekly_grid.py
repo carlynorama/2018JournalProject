@@ -1,5 +1,5 @@
 
-file_name = "grid_test"
+file_name = "habit_weekly_pygen"
 viewBoxWidth = 3300
 viewBoxHeight = 2550
 
@@ -7,7 +7,8 @@ font_size_for_row = 32
 font_size_for_col = 24
 row_max_label_length = 9
 
-row_items = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+col_items = ["M", "T", "W", "Th", "F", "S", "Su"]
+row_items = ["Habit1", "Habit2", "Habit3", "Habit4", "Habit5", "Habit5", "Habit7", "Habit8"]
 
 row_range = range(0,(len(row_items))) #0 is header
 max_row_number = max(row_range)
@@ -16,10 +17,10 @@ row_label_size = font_size_for_row * row_max_label_length
 grid_height = row_height * (max_row_number+2)
 
 
-col_range = range(1,32)
+col_range = range(0,(len(col_items))) #0 is header
 max_col_number = max(col_range)
 col_width = 3 * font_size_for_col
-grid_width = row_label_size + (max_col_number * col_width)
+grid_width = row_label_size + ((max_col_number+1) * col_width)
 
 divider_line_style = "stroke:rgb(153,153,153);stroke-width:2"
 heavy_divider_line_style = "stroke:rgb(153,153,153);stroke-width:4"
@@ -38,9 +39,9 @@ f.write('<g id="tracker" transform="translate(%s, %s)">\n' % ("100", "100"))
 #Column line after row lable
 f.write('\t\t\t<line x1="%s" y1="%s" x2="%s" y2="%s" style="%s" />\n' % (row_label_size, 0, row_label_size, grid_height, heavy_divider_line_style))
 for c in col_range:
-    my_line_x = row_label_size + ((c) * col_width)
-    my_text_x = row_label_size + col_width/2 + ((c-1) * col_width)
-    my_text = c
+    my_line_x = row_label_size + ((c+1) * col_width)
+    my_text_x = row_label_size + col_width/2 + ((c) * col_width)
+    my_text = col_items[c]
     f.write('\t\t<text x="%s" y="%s" style="%s" text-anchor="middle" dominant-baseline="middle">%s</text>\n' % (my_text_x, row_height/2, font_style_for_col, my_text))
     f.write('\t\t\t<line x1="%s" y1="%s" x2="%s" y2="%s" style="%s" />\n' % (my_line_x, 0, my_line_x, grid_height, divider_line_style))
 
