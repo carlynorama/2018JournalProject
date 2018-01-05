@@ -7,6 +7,7 @@ categories: meta
 
 ##Markdown and Jekyll
 - https://github.com/krisb/jekyll-template/
+- https://github.com/maciakl/Sample-Jekyll-Site/blob/master/_config.yml
 
 ##Python 2.7
 - http://strftime.org/
