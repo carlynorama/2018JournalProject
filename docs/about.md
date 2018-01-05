@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 2018 Journal Project
+title: About
 ---
 
 ## What's going on here?

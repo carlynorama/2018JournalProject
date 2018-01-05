@@ -1,8 +1,6 @@
 -
-layout: post
+layout: default
 title:  "Useful Links"
-date:   2017-01-03 08:01:01 -0600
-categories: meta
 ---
 
 ##Markdown and Jekyll
