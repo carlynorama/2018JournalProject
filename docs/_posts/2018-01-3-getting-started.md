@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Getting Started"
 date:   2017-01-03 08:01:01 -0600
 ---
