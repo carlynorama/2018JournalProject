@@ -2,7 +2,7 @@
 
 ## What this is
 
-Paper organizers work better for me than electronic ones because as soon as I open my computer, I'm lost. The [Bullet Journal] fills a void that rigid preprinted layouts just can't fill: layouts that match exactly how you think about your day. YouTubers have taken the flexible and accessible system created by [Ryder Carroll] to a [whole new level][1] that honestly overwhelms and intimidates me. So I'm not going to doodle. I'm going to code.
+Paper organizers work better for me than electronic ones; as soon as I open my computer in the morning, I'm lost. The [Bullet Journal] fills a void that rigid preprinted layouts just can't fill: layouts that match exactly how I think about my day. YouTubers have taken the flexible and accessible system created by [Ryder Carroll] to a [whole new level][1] that honestly overwhelms and intimidates me. So I'm not going to doodle. I'm going to code.
 
 [Bullet Journal]: http://bulletjournal.com/
 [Ryder Carroll]: http://www.rydercarroll.com/
@@ -22,13 +22,15 @@ Why SVG? Well, I want an [AxiDraw] and I need some justifications before I can b
 
 ## How to use the Repo
 
+Missing layouts I probably am working with a draft done in Pages. They'll show up eventually.  Got to get some real work done.
+
 ### Python
 
-Pretty straightforward for 2.7, it comes bundled in most operating systems.
+Pretty straightforward for 2.7. This version of the language comes bundled in most operating systems.
 
 - Get a file.
 - Open the file.
-- Change the variables so the right dates will be used.
+- Change the variables so the right dates / content will be used.
 - Open the directory (`cd DIRECTORY/LOCATION`) where the file lives in the command line
 - Run the file (`python FILENAME.py`)
 
