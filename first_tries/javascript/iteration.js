@@ -3,23 +3,23 @@ let this_weeks_dates = [ 16, 17, 18, 19, 20, 21, 22]
 
 
 //old school
-for (let d = 0; d < 7; d++) {
+for (var d = 0; d < 7; d++) {
     console.log(days_of_the_week[d]);
 }
 
 //for the length of the array
-for (let d = 0; d < days_of_the_week.length; d++) {
+for (var d = 0; d < days_of_the_week.length; d++) {
     console.log(days_of_the_week[d]);
 }
 
 //dual array-ish
-for (let d = 0; d < days_of_the_week.length; d++) {
+for (var d = 0; d < days_of_the_week.length; d++) {
     let message = `The ${this_weeks_dates[d]} is a ${days_of_the_week[d]}`
     console.log(message);
 }
 
 //start late, skip around
-for (let d = 1; d < days_of_the_week.length; d +=2) {
+for (var d = 1; d < days_of_the_week.length; d +=2) {
     let message = `The ${this_weeks_dates[d]} is a ${days_of_the_week[d]}`
     console.log(message);
 }
@@ -73,3 +73,21 @@ console.log(`${key} ${value}`); // "a 5", "b 7", "c 9"
 days_of_the_week.entries().forEach(([key, value]) => {
 console.log(`${key} ${value}`); // "a 5", "b 7", "c 9"
 });
+
+//https://www.htmlgoodies.com/html5/javascript/getting-fancy-with-the-javascript-for-loop.html
+
+//Dual conditions: Start at 0 end at Wednesday
+for (var i=0; i<days_of_the_week.length && days_of_the_week[i] != 'W'; i++) {
+  console.log( 'day #' + (i+1) + ' is a ' + days_of_the_week[i])
+}
+
+//Two Incrementors
+for(var a = 1, b = 10; a*b; a++, b--) {
+  console.log(`${a} ${b}`);
+}
+
+//variable declarations galore.
+for (var i=0, len=days_of_the_week.length, text="You've got "+len+" days:\n"; i<len; i++) {
+    text += days_of_the_week[i] + "\n";
+}
+console.log(text)
