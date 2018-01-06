@@ -64,21 +64,18 @@ Examples
 
 Text specific attributes in addition to fill, etc.
 
-- font=''
-- font-family=''
-- font-size=''
-- font-weight=''
-- font-size-adjust=''
-- font-stretch=''
-- font-style=''
-- font-variant=''
-- kerning
+- font-family=' ' | font-family: ;
+- font-size=' '
+- font-weight=' '
+- font-size-adjust=' '
+- font-stretch=' '
+- font-style=' '
+- font-variant=' '
+- kerning: hkern, vkern
 - letter-spacing
-- text-anchor=" "
+- text-anchor=
 - dominant-baseline=" "
 - text-decoration=" "
-
-
 
 Examples
 `<text x="30" y="108" text-anchor="end" dominant-baseline="middle" style="font-family:"Times New Roman",Times,serif;font-size:54px;fill:rgb(102,102,102);" >Jan 3</text>`
