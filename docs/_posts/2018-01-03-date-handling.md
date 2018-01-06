@@ -164,7 +164,7 @@ let next_week2 = mday.add(7, 'd');
 let added_date = mday.add(3, 'days').add(1, 'months'); // with chaining
 let added_date2 = mday.add({days:3,months:1}); // with object literal
 
-//snap to beginning
+//snap to beginning, there is also .endOf
 let first_day_of_year = mday.startOf('year');    // set to January 1st, 12:00 am this year
 let first_day_of_month = mday.startOf('month');   // set to the first of this month, 12:00 am
 let first_day_of_quarter =mday.startOf('quarter');  // set to the beginning of the current quarter, 1st day of months, 12:00 am
