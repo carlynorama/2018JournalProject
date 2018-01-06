@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Date Handling"
+date:   2018-01-03 08:07:01 -0600
+tags: pvj
+---
+
+## Python
+
+{% highlight python %}
+
+{% endhighlight %}
+
+## Javascript
+
+{% highlight javascript %}
+
+{% endhighlight %}
