@@ -25,25 +25,30 @@ Letter sized, landscape orientation.
 
 <circle cx=" " cy=" " r=" "/>
 <ellipse cx=" " cy=" " rx=" " ry=" "/>
-(stroke=" " fill=" " stroke-width=" "  or style="stroke: ;fill: ;stroke-width: ")
 
 <rect x=" " y=" " width=" " height=" "/>
 <rect x=" " y=" " rx=" " ry=" " width=" " height=" "/>
-(stroke=" " fill=" " stroke-width=" "  or style="stroke: ;fill: ;stroke-width: ")
-
 
 <line x1=" " x2=" " y1=" " y2=" "/>
-(stroke=" " stroke-width=" "  or or style="stroke: ;stroke-width: ")
 
 <!-- commas for x y coord pairs aren't strictly necessary-->
 <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160"/>
 <polygon points="200,10 250,190 160,210"/>
-(stroke=" " fill=" " stroke-width=" "  or style="stroke: ;fill: ;stroke-width: ")
 
 <path d="M20,230 Q40,205 50,230 T90,230" />
-(stroke=" " fill=" " stroke-width=" "  or style="stroke: ;fill: ;stroke-width: ")
 
 {% endhighlight %}
+
+Common attributes
+- stroke
+- fill
+- stroke-width
+- stroke-opacity
+- fill-opacity
+
+Examples
+`<circle cx="100" cy="100" r="100" fill="#666" stroke="green" stroke-width="10"/>`
+`<line x1="15" y1="15" x2="15" y2="185" style="stroke:rgb(153,153,153);stroke-width:2" />`
 
 ## Text
 
@@ -55,11 +60,29 @@ Letter sized, landscape orientation.
   <tspan x=" " y=" " style=" ">Second line.</tspan>
 </text>
 
-style="font-family:'Helvetica';font-size: px;fill:rgb( , , );"
-(fill=" " or style="stroke: ;fill: ;stroke-width: ")
-(font='' font-family='' font-size='' font-weight='' font-size-adjust='' font-stretch='' font-style='' font-variant='')
-
 {% endhighlight %}
+
+Text specific attributes in addition to fill, etc.
+
+- font=''
+- font-family=''
+- font-size=''
+- font-weight=''
+- font-size-adjust=''
+- font-stretch=''
+- font-style=''
+- font-variant=''
+- kerning
+- letter-spacing
+- text-anchor=" "
+- dominant-baseline=" "
+- text-decoration=" "
+
+
+
+Examples
+`<text x="30" y="108" text-anchor="end" dominant-baseline="middle" style="font-family:"Times New Roman",Times,serif;font-size:54px;fill:rgb(102,102,102);" >Jan 3</text>`
+
 
 
 ## Groups & Transformations

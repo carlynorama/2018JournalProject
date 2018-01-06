@@ -21,6 +21,8 @@ title:  "Useful Links"
 - <https://www.htmlgoodies.com/html5/javascript/getting-fancy-with-the-javascript-for-loop.html>
 
 ## SVG
+- <https://developer.mozilla.org/en-US/docs/Web/SVG/Element>
+- <https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute>
 - <https://www.w3.org/TR/SVG2/styling.html>
 - <https://css-tricks.com/one-illustration-three-svg-outputs/>
 - <https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform>
