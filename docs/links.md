@@ -18,5 +18,6 @@ title:  "Useful Links"
 
 ## Javascript
 - https://momentjs.com/docs/#/displaying/
+- https://www.htmlgoodies.com/html5/javascript/getting-fancy-with-the-javascript-for-loop.html
 
 ## SVG
