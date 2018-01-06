@@ -1,4 +1,5 @@
 days_of_the_week = ['M', 'T', 'W', 'Th', 'F', 'Sa', 'Su']
+this_weeks_dates = [ 16, 17, 18, 19, 20, 21, 22]
 
 print "for i in array"
 for i in days_of_the_week:
@@ -20,8 +21,18 @@ print "for i in range by length of array"
 for i in range(len(days_of_the_week)):
      print days_of_the_week[i]
 
+print "enumerate for when need index, too"
 for num, day in enumerate(days_of_the_week):
     print("Day # {}: {}".format(num, day))
+
+print "enumerate, dual array with one index"
+for d, day in enumerate(days_of_the_week):
+    date = this_weeks_dates[d]
+    print("The {} is a {}".format(date, day))
+
+print "zip for dual array"
+for date, day in zip(this_weeks_dates, days_of_the_week):
+    print("The {} is a {}".format(date, day))
 
 string = "Monday"
 for c in string:
@@ -33,10 +44,3 @@ for week in month:
     print "next week"
     for day in week:
         print day
-centerX = 15
-centerY = 15
-radius = 10
-style = "fill:rgb(200,200,255);"
-
-message2 = '\t<circle cx="{}" cy="{}" r="{}" style="{}"/>\n'.format(centerX+(1*((radius*2)+5)), centerY, radius, style)
-print(message2)
