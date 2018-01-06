@@ -18,6 +18,7 @@ title:  "Useful Links"
 
 ## Javascript
 - <https://momentjs.com/docs/#/displaying/>
+- <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date>
 - <https://www.htmlgoodies.com/html5/javascript/getting-fancy-with-the-javascript-for-loop.html>
 
 ## SVG
@@ -26,3 +27,4 @@ title:  "Useful Links"
 - <https://www.w3.org/TR/SVG2/styling.html>
 - <https://css-tricks.com/one-illustration-three-svg-outputs/>
 - <https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform>
+- https://css-tricks.com/presentation-attributes-vs-inline-styles/
