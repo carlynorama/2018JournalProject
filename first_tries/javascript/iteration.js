@@ -90,4 +90,4 @@ for(var a = 1, b = 10; a*b; a++, b--) {
 for (var i=0, len=days_of_the_week.length, text="You've got "+len+" days:\n"; i<len; i++) {
     text += days_of_the_week[i] + "\n";
 }
-console.log(text)
+console.log(text) //text now persists after the for loop. 
