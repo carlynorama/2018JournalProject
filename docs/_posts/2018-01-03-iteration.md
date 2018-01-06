@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Itteration"
+title:  "Iteration"
 date:   2018-01-03 08:04:01 -0600
 tags: pvj
 ---
@@ -152,5 +152,5 @@ for(var a = 1, b = 10; a*b; a++, b--) {
 for (var i=0, len=days_of_the_week.length, text="You've got "+len+" days:\n"; i<len; i++) {
     text += days_of_the_week[i] + "\n";
 }
-console.log(text) //text now persists after the for loop. 
+console.log(text) //text now persists after the for loop.
 {% endhighlight %}
