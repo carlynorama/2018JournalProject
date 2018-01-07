@@ -85,7 +85,7 @@ for m in month_range:
         #f.write('\t\t\t\t<circle cx="%s" cy="%s" r="%s"/>\n' % (my_x, my_y, radius))
         f.write('\t\t\t\t\t<text x="%s" y="%s">%s</text>\n' % (my_date_x, my_date_y, my_date.strftime("%d")))
     f.write('\t\t\t\t</g>\n') # end month_days
-    f.write('\t\t</g>\n') #end minical
+    f.write('\t\t\t</g>\n') #end minical
     f.write('\t\t</g>\n') #end month
 
 f.write('\t</g>\n') #end calendar
