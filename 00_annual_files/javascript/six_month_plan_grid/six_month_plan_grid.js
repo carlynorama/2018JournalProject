@@ -5,52 +5,56 @@ var moment = require('moment')
 //https://momentjs.com/docs////displaying/
 
 let year = 2018
+let start_month = 0
+let end_month = 6
+let number_of_months = end_month-start_month
 
-let viewBoxWidth = 2550
-let viewBoxHeight = 3300
-let calendarWidth = 2000
-let calendarHeight = 2600
+let viewBoxWidth = 3300
+let viewBoxHeight = 2550
+let calendarWidth = 2900
+let calendarHeight = 2100
 
-let contentLeftMargin = (viewBoxWidth-calendarWidth) / 2
-let contentTopMargin = 2 * viewBoxHeight / 15
-
-let radius = calendarWidth/57
+let radius = calendarWidth/((6*7)*2.5)
 let day_xmargin = radius/3
 let day_ymargin = radius/3
 let outline_style_for_day = "fill:rgb(220,230,255);"
+let divider_line_style = "stroke:rgb(153,153,153);stroke-width:2"
 let font_size_for_day = radius
 let font_style_for_day = `font-family:\'Helvetica\';font-size:${font_size_for_day}px;fill:rgb(51,51,51);`
+let font_style_for_days_of_week = "font-family:\'Helvetica\';font-weight=\'bold\';font-size:${font_size_for_day}px;fill:rgb(51,51,51);"
 let font_size_for_month = radius*2
 let font_style_for_month = `font-family:\'Helvetica\';font-size:${font_size_for_month}px;fill:rgb(102,102,102);`
 let font_size_for_title = radius*4
 let font_style_for_title = `font-family:\'Helvetica\';font-size:${font_size_for_title}px;fill:rgb(102,102,102);`
 
-let file_name = `${year}_yaag_jsgen`
+let content_x_offset = 75
+let content_y_offset = 2 * viewBoxHeight / 15
+let title_x_offset = content_x_offset
+let title_y_offset = content_y_offset - (font_size_for_title*1.5)
+
+let file_name = `${year}_sixmo_jsgen`
 let page_title = year
 
-let days_of_the_week = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
+//momnent.js could be customized instead. Would be better for localization.
+let days_of_the_week = ['S', 'M', 'T', 'W', 'T', 'F', 'S']
 
 var svg = ""
 svg += '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
 svg += '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n'
 
 svg += `<svg width="100%" height="100%" viewBox="0 0 ${viewBoxWidth} ${viewBoxHeight}" xmlns="http://www.w3.org/2000/svg">\n`
-
-//doesn't work in Affinity Designer, baselines neither
 svg += `<style>/* <![CDATA[ */circle{${outline_style_for_day}}/* ]]> */</style>\n` //% outline_style_for_day)
 
-let title_x_offset = viewBoxWidth/2
-let title_y_offset = viewBoxHeight/20
 svg += `\t<g id="page_title" transform="translate(${title_x_offset}, ${title_y_offset})">\n`
-svg += `\t\t<text x="0" y="0" style="${font_style_for_title}" text-anchor="middle" dominant-baseline="central">${page_title}</text>\n`
+svg += `\t\t<text x="0" y="0" style="${font_style_for_title}" text-anchor="start" dominant-baseline="central">${page_title}</text>\n`
 svg += '\t\t</g>\n' // end page_title
 
-svg += `<g id="calendar" width="${calendarWidth}" height="${calendarHeight}" transform="translate(${contentLeftMargin}, ${contentTopMargin})">\n`
-for (let m=0; m < 12; m++) {
+svg += `<g id="calendar" width="${calendarWidth}" height="${calendarHeight}" transform="translate(${content_x_offset}, ${content_y_offset})">\n`
+for (let m=start_month; m < end_month; m++) {
     let month = m
-    let month_x_offset = (month)%3 * (calendarWidth/3 + (2*radius))
-    let month_y_offset = Math.trunc(month/3) * (calendarHeight/4 + (2*radius))
-    //console.log(`${month}: (${month_x_offset}, ${month_y_offset})`)
+    let month_x_offset = (month)%number_of_months * (calendarWidth/number_of_months + (2*radius))
+    let left_margin = radius
+      //console.log(`${month}: (${month_x_offset}, ${month_y_offset})`)
     let day = new Date(year, m, 1);
     let first_day = moment(day);
     let first_weekday = first_day.format('d')
@@ -58,8 +62,12 @@ for (let m=0; m < 12; m++) {
     let month_name = first_day.format("MMMM")
     let month_title = first_day.format("MMMM")
     let last_day_of_the_month = first_day.daysInMonth()
-    svg += `\t\t<g id="${month_name}" transform="translate(${month_x_offset}, ${month_y_offset})">\n`
+
+    svg += `\t\t<g id="${month_name}" transform="translate(${month_x_offset}, 0)">\n`
+    svg += `\t\t\t<line x1="${0}" y1="${0}" x2="${0}" y2="${calendarHeight}" style="${divider_line_style}" />\n`
+    console.log('${month} line: (${month_x_offset + left_margin}, ${0}) to (${month_x_offset}, ${calendarHeigh})')
     svg += `\t\t\t<text x="0" y="0" style="${font_style_for_month}" text-anchor="left" dominant-baseline="central">${month_title}</text>\n`
+    svg += `\t\t<g id="minical" transform="translate(${0}, ${0})">\n`
     svg += `\t\t\t<g id="${month_name}_weekbar" transform="translate(0, ${font_size_for_month*1.5})" style="${font_style_for_day}" text-anchor="middle" dominant-baseline="central">\n`
     for (let d=0; d < 7; d++) {
         my_x = (d * ((radius*2)+day_xmargin)) + radius
@@ -97,6 +105,7 @@ for (let m=0; m < 12; m++) {
         svg += `\t\t\t\t<text x="${my_date_x}" y="${my_date_y}">${my_date_text}</text>\n`
       }
     svg += '\t\t\t</g>\n' // end month_days
+    svg += '\t\t</g>\n' //end minical
     svg += '\t\t</g>\n' //end month
 }
 svg += '\t</g>\n' //end calendar
