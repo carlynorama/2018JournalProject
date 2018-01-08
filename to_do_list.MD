@@ -1,7 +1,5 @@
 ##Next
 - Habit Tracker: Weekly Grid - javascript
-- 6 month planner, javascript
-- Basic Weekly Layout - javascript
 - Habit Tracker: Annual Grid - javascript
 
 ##Nice to have
@@ -23,3 +21,5 @@
 - Basic Weekly Layout - python
 - Habit Tracker: Annual Grid - python
 - Habit Tracker: Weekly Grid - python
+- Basic Weekly Layout - javascript
+- 6 month planner, javascript
