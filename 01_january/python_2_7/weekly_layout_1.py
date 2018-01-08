@@ -40,8 +40,6 @@ page_title = "Weekly Planning - %s to %s" % (start_date.strftime("%b %-d, %Y"), 
 
 day_range = range(0,number_of_days)
 
-days_of_the_week = ['S', 'M', 'T', 'W', 'T', 'F', 'S']
-
 f = open('%s.svg' % file_name, 'w')
 #print month_name
 f.write('<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n')
