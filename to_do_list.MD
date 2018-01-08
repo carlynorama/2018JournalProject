@@ -1,11 +1,8 @@
 ##Next
-- Habit Tracker: Weekly Grid - javascript
-- Habit Tracker: Annual Grid - javascript
+
 
 ##Nice to have
-- year long habit tracker - 31 by 12 grid
 - monthly habit tracker (habits list X 12 months)
-- weekly habit tracker (habits x 53 weeks)
 - grid fill
 - line rule fill
 - line rule (alternate fill)
@@ -23,3 +20,5 @@
 - Habit Tracker: Weekly Grid - python
 - Basic Weekly Layout - javascript
 - 6 month planner, javascript
+- Habit Tracker: Weekly Grid - javascript
+- Habit Tracker: Annual Grid - javascript
