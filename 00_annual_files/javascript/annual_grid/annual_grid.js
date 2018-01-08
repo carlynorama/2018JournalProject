@@ -1,7 +1,7 @@
 const fs = require('fs')
 const moment = require('moment')
 
-const file_name = "habit_weekly_jsgen"
+const file_name = "annual_grid_jsgen"
 const viewBoxWidth = 3300
 const viewBoxHeight = 2550
 const place_on_page_x = 100
@@ -14,9 +14,10 @@ const row_max_label_length = 9
 var col_items = []
 const longest_month_length = 31
 for (var i = 1; i <= longest_month_length; i++) {
-   col_items.push(i);
+   col_items.push(("00000" + i).slice(-2));
+   //console.log(("00000" + i).slice(-5))
 }
-const row_items = moment.monthsShort()
+const row_items = moment.months()//moment.monthsShort()
 
 const num_of_rows = row_items.length
 const max_row_number = num_of_rows-1
@@ -32,8 +33,8 @@ const grid_width = row_label_size + ((max_col_number+1) * col_width)
 const divider_line_style = "stroke:rgb(153,153,153);stroke-width:2"
 const heavy_divider_line_style = "stroke:rgb(153,153,153);stroke-width:4"
 
-const font_style_for_col = "font-family:\'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_col
-const font_style_for_row = "font-family:\'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_row
+const font_style_for_col = `font-family:\'Helvetica\';font-size:${font_size_for_col}px;fill:rgb(102,102,102);`
+const font_style_for_row = `font-family:\'Helvetica\';font-size:${font_size_for_row}px;fill:rgb(102,102,102);`
 
 let svg = ""
 svg += `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n`
