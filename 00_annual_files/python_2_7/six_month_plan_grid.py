@@ -20,9 +20,9 @@ font_size_for_day = int(radius)
 font_style_for_day = "font-family:\'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_day
 font_style_for_days_of_week = "font-family:\'Helvetica\';font-weight=\'bold\';font-size:%spx;fill:rgb(51,51,51);" % font_size_for_day
 font_size_for_month = int(radius)*2
-font_style_for_month = "font-family:\'Futura\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_month
+font_style_for_month = "font-family:\'Futura\', \'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_month
 font_size_for_title = int(radius)*4
-font_style_for_title = "font-family:\'Futura\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_title
+font_style_for_title = "font-family:\'Futura\', \'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_title
 
 content_x_offset = 75
 content_y_offset = 2 * viewBoxHeight / 15
