@@ -1,5 +1,5 @@
 const fs = require('fs')
-var moment = require('moment')
+let moment = require('moment')
 //https://momentjs.com/docs////displaying/
 
 let year = 2018
@@ -28,7 +28,7 @@ let page_title = year
 
 let days_of_the_week = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
 
-var svg = ""
+let svg = ""
 svg += '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
 svg += '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n'
 
@@ -73,7 +73,7 @@ for (let m=0; m < 12; m++) {
         let my_weekday = my_moment.format('d')
 
         //catches 5th week in December error w/o causing weird March error
-        var my_week = 0
+        let my_week = 0
         if ((month == 11) && (my_moment.format('w') < first_week_of_the_month)) {
             my_week = parseInt(my_moment.format('w')) + 52 - first_week_of_the_month + 1
         } else {

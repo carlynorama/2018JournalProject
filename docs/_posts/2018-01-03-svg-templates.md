@@ -70,7 +70,7 @@ Text specific attributes in addition to fill, etc.
 - font-size-adjust=' '
 - font-stretch=' '
 - font-style=' '
-- font-variant=' '
+- font-letiant=' '
 - kerning: hkern, vkern
 - letter-spacing
 - text-anchor=

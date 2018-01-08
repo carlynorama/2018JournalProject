@@ -1,7 +1,7 @@
 //
 
 const fs = require('fs')
-var moment = require('moment')
+let moment = require('moment')
 //https://momentjs.com/docs////displaying/
 
 let year = 2018
@@ -39,7 +39,7 @@ let title_y_offset = content_y_offset - (font_size_for_title*1.5)
 let file_name = `${year}_week_${start_moment.format('MMDD')}_${end_moment.format('MMDD')}_jsgen`
 let page_title = `Weekly Planning - ${start_moment.format('MMM Do, YYYY')} to ${end_moment.format('MMM Do, YYYY')}`
 
-var svg = ""
+let svg = ""
 svg += '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
 svg += '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n'
 
@@ -52,7 +52,7 @@ svg += '\t\t</g>\n' // end page_title
 
 svg += `<g id="calendar" width="${calendarWidth}" height="${calendarHeight}" transform="translate(${content_x_offset}, ${content_y_offset})">\n`
 for (let d=0; d < number_of_days; d++) {
-    var current_moment = moment(start_moment) // passes by reference? You're killeing me.
+    let current_moment = moment(start_moment) // passes by reference? You're killeing me.
     current_moment.add(d, 'days');
     console.log(`current: ${current_moment}, start: ${start_moment}`)
     let day_x_offset = (d)%number_of_days * (calendarWidth/number_of_days + (2*radius))

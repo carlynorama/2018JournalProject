@@ -1,5 +1,5 @@
 const fs = require('fs')
-var moment = require('moment')
+let moment = require('moment')
 //https://momentjs.com/docs/#/displaying/
 
 let year = 2018
@@ -19,8 +19,8 @@ let font_size_for_month = 2*radius
 let font_style_for_month = `font-family:\'Helvetica\';font-size:${font_size_for_month}px;fill:rgb(102,102,102);`
 
 
-var day = new Date(year, month, 1);
-var first_day = moment(day);
+let day = new Date(year, month, 1);
+let first_day = moment(day);
 first_weekday = first_day.format('d')
 first_week_of_the_month = first_day.format('w')
 file_name = first_day.format('YYYYMMM')

@@ -1,5 +1,5 @@
 const fs = require('fs')
-var moment = require('moment')
+let moment = require('moment')
 //https://momentjs.com/docs/#/displaying/
 
 let year = 2018
@@ -33,7 +33,7 @@ let last_day_of_the_month = first_day.daysInMonth()
 console.log(`START !!! my date: ${day} my week: ${first_week_of_the_month}, my day: ${first_weekday}"`)
 
 
-var svg = ""
+let svg = ""
 svg += '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
 svg += '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n'
 

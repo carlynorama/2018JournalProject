@@ -22,7 +22,7 @@ console.log(message)
 
 //Switch to moment.js
 
-var moment = require('moment');
+let moment = require('moment');
 let new_date = Date();
 let mday = moment(new_date);
 
