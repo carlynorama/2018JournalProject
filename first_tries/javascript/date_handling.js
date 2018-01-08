@@ -49,7 +49,7 @@ let first_day_of_week = mday.startOf('week');    // set to the first day of this
 let first_day_of_weekISO = mday.startOf('isoWeek');
 
 //iterating
-https://stackoverflow.com/questions/17163809/iterate-through-a-range-of-dates-in-nodejs
+//https://stackoverflow.com/questions/17163809/iterate-through-a-range-of-dates-in-nodejs
 var a = moment('2013-01-01');
 var b = moment('2013-06-01');
 
