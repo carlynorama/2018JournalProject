@@ -47,3 +47,18 @@ let first_day_of_month = mday.startOf('month');   // set to the first of this mo
 let first_day_of_quarter =mday.startOf('quarter');  // set to the beginning of the current quarter, 1st day of months, 12:00 am
 let first_day_of_week = mday.startOf('week');    // set to the first day of this week, 12:00 am
 let first_day_of_weekISO = mday.startOf('isoWeek');
+
+//iterating
+https://stackoverflow.com/questions/17163809/iterate-through-a-range-of-dates-in-nodejs
+var a = moment('2013-01-01');
+var b = moment('2013-06-01');
+
+// If you want an exclusive end date (half-open interval)
+for (var m = moment(a); m.isBefore(b); m.add(1, 'days')) {
+  console.log(m.format('YYYY-MM-DD'));
+}
+
+// If you want an inclusive end date (fully-closed interval)
+for (var m = moment(a); m.diff(b, 'days') <= 0; m.add(1, 'days')) {
+  console.log(m.format('YYYY-MM-DD'));
+}

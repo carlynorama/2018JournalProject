@@ -134,7 +134,7 @@ console.log(message)
 
 ### Moment.js functions
 
-Set up a moment
+#### Set up a moment
 
 {% highlight javascript %}
 let moment = require('moment');
@@ -142,7 +142,7 @@ let new_date = Date();
 let mday = moment(new_date);
 {% endhighlight %}
 
-Getting formats out
+#### Getting formats out
 
 {% highlight javascript %}
 let weekday_as_number = mday.format('d')
@@ -153,7 +153,7 @@ let full_month_full_year = mday.format("MMMM, YYYY")
 let last_day_of_the_month = mday.daysInMonth()
 {% endhighlight %}
 
-Manipulating time
+#### Manipulating time
 
 Using a momentjs object , it's force create new moment instead of just passing an object reference.
 
@@ -173,4 +173,22 @@ let first_day_of_month = moment(mday.startOf('month'));   // set to the first of
 let first_day_of_quarter =moment(mday.startOf('quarter'));  // set to the beginning of the current quarter, 1st day of months, 12:00 am
 let first_day_of_week = moment(mday.startOf('week'));    // set to the first day of this week, 12:00 am
 let first_day_of_weekISO = moment(mday.startOf('isoWeek'));
+{% endhighlight %}
+
+#### Iterating over a set of days
+
+{% highlight javascript %}
+//https://stackoverflow.com/questions/17163809/iterate-through-a-range-of-dates-in-nodejs
+var a = moment('2013-01-01');
+var b = moment('2013-06-01');
+
+// If you want an exclusive end date (half-open interval)
+for (var m = moment(a); m.isBefore(b); m.add(1, 'days')) {
+  console.log(m.format('YYYY-MM-DD'));
+}
+
+// If you want an inclusive end date (fully-closed interval)
+for (var m = moment(a); m.diff(b, 'days') <= 0; m.add(1, 'days')) {
+  console.log(m.format('YYYY-MM-DD'));
+}
 {% endhighlight %}
