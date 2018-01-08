@@ -137,7 +137,7 @@ console.log(message)
 Set up a moment
 
 {% highlight javascript %}
-var moment = require('moment');
+let moment = require('moment');
 let new_date = Date();
 let mday = moment(new_date);
 {% endhighlight %}
@@ -155,19 +155,22 @@ let last_day_of_the_month = mday.daysInMonth()
 
 Manipulating time
 
+Using a momentjs object , it's force create new moment instead of just passing an object reference.
+
 {% highlight javascript %}
 //seven days from now
-let next_week = mday.add(7, 'days');
-let next_week2 = mday.add(7, 'd');
+
+let next_week = moment(mday.add(7, 'days'));
+let next_week2 = moment(mday.add(7, 'd'));
 
 //3 days from now next month
-let added_date = mday.add(3, 'days').add(1, 'months'); // with chaining
-let added_date2 = mday.add({days:3,months:1}); // with object literal
+let added_date = moment(mday.add(3, 'days').add(1, 'months')); // with chaining
+let added_date2 = moment(mday.add({days:3,months:1})); // with object literal
 
 //snap to beginning, there is also .endOf
-let first_day_of_year = mday.startOf('year');    // set to January 1st, 12:00 am this year
-let first_day_of_month = mday.startOf('month');   // set to the first of this month, 12:00 am
-let first_day_of_quarter =mday.startOf('quarter');  // set to the beginning of the current quarter, 1st day of months, 12:00 am
-let first_day_of_week = mday.startOf('week');    // set to the first day of this week, 12:00 am
-let first_day_of_weekISO = mday.startOf('isoWeek');
+let first_day_of_year = moment(mday.startOf('year'));    // set to January 1st, 12:00 am this year
+let first_day_of_month = moment(mday.startOf('month'));   // set to the first of this month, 12:00 am
+let first_day_of_quarter =moment(mday.startOf('quarter'));  // set to the beginning of the current quarter, 1st day of months, 12:00 am
+let first_day_of_week = moment(mday.startOf('week'));    // set to the first day of this week, 12:00 am
+let first_day_of_weekISO = moment(mday.startOf('isoWeek'));
 {% endhighlight %}
