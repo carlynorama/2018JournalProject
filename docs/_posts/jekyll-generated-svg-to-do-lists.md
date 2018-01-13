@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using Jekyll to generate SVG To-Do lists"
-date:   2018-01-12
+date:   2018-01-12 08:03:01 -0600
 tags: SVG jekyll liquid
 ---
 
