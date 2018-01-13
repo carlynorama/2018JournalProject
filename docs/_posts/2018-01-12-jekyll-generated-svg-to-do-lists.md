@@ -50,6 +50,7 @@ The math for the for loop was found at the [Liquid official Math docs][2] and a 
 ---
 collection: sweep
 layout: checklist
+navexclude: true
 name: my_checklist.md
 title: Basic Checklist
 ---
