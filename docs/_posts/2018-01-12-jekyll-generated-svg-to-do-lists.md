@@ -44,7 +44,9 @@ Called `checklist.html` in the `_layouts` folder.
 
 ### Step 3: Create a post
 
-The math for the for loop was found at the [Liquid official Math docs][2] and a [HowTo posted by a community member][3].
+The math for the for loop was found at the [Liquid official Math docs][2] and a [HowTo posted by a community member][3].  
+
+Keep in mind the date below will be the date Jekyll generates the HTML, not the date the HTML file is being displayed to the user.
 
 {% highlight Liquid %}
 ---
