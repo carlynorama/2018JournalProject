@@ -5,7 +5,7 @@ date:   2018-01-12 08:03:01 -0600
 tags: SVG jekyll liquid
 ---
 
-My goal wasn't to generate SVG's with Jekyll, but apparently you can. I did an example over at the [Tuesday Sweep][1]]. Nothing fancy yet, but I enjoyed the cross polination. When I pull in data here, I'll try to do it from similarly formatted YAML files.  
+My goal wasn't to generate SVG's with Jekyll, but apparently you can. I did an example over at the [Tuesday Sweep][1]. Nothing fancy yet, but I enjoyed the cross polination. When I pull in data here, I'll try to do it from similarly formatted YAML files.  
 
 ### Step 1: Create a YML file for the list
 
