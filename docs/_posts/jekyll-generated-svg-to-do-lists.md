@@ -9,7 +9,7 @@ My goal wasn't to generate SVG's with Jekyll, but apparently you can. I did an e
 
 ### Step 1: Create a YML file for the list
 
-this should be in {{_data}} directory in the jekyll source folder.  
+this should be in `_data` directory in the jekyll source folder.  
 
 {% highlight YML %}
 group_title: Basic Weekly Checklist
@@ -27,7 +27,7 @@ bwc:
 
 ### Step 2: Create a layout
 
-Called {{checklist.html}} in the {{_layouts}} folder.
+Called `checklist.html` in the `_layouts` folder.
 
 {% highlight HTML%}
 <!DOCTYPE html>
