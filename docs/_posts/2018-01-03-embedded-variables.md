@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Embedded letiables and Printing to Console"
+title:  "Embedded Variables and Printing to Console"
 date:   2018-01-03 08:02:01 -0600
 tags: pvj
 ---
