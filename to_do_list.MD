@@ -1,5 +1,5 @@
 ##Next
-- pull habits from json
+- pull habits from json, python
 - pull habits from plainer text
 - grid fill
 
@@ -25,3 +25,4 @@
 - Habit Tracker: Weekly Grid - javascript
 - Habit Tracker: Annual Grid - javascript
 - fix fonts in javascript weekly_grid
+- - pull habits from json, javascript
