@@ -1,6 +1,10 @@
 const fs = require('fs')
 const moment = require('moment')
 
+let habitdata = fs.readFileSync('example_data/habits.json');
+let habits = JSON.parse(habitdata);
+console.log(habits);
+
 const file_name = "habit_weekly_jsgen"
 const viewBoxWidth = 3300
 const viewBoxHeight = 2550
