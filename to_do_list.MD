@@ -1,9 +1,11 @@
 ##Next
-
+- pull habits from json
+- pull habits from plainer text
+- grid fill
 
 ##Nice to have
 - monthly habit tracker (habits list X 12 months)
-- grid fill
+
 - line rule fill
 - line rule (alternate fill)
 
