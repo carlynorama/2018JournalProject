@@ -1,5 +1,6 @@
 ##Next
 - pull habits from json
+- fix fonts in javascript weekly_grid
 - pull habits from plainer text
 - grid fill
 
