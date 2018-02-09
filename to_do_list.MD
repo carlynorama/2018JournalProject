@@ -1,6 +1,5 @@
 ##Next
 - pull habits from json
-- fix fonts in javascript weekly_grid
 - pull habits from plainer text
 - grid fill
 
@@ -25,3 +24,4 @@
 - 6 month planner, javascript
 - Habit Tracker: Weekly Grid - javascript
 - Habit Tracker: Annual Grid - javascript
+- fix fonts in javascript weekly_grid
