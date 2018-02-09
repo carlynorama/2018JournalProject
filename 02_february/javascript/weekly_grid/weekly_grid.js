@@ -2,11 +2,6 @@ const fs = require('fs')
 const moment = require('moment')
 
 let habitData = require('./example_data/habits.json');
-console.log(habitData);
-
-// for(var exKey in habitData) {
-//     console.log("key:"+exKey+", value:"+habitData[exKey].habit);
-// }
 
 const file_name = "habit_weekly_jsgen"
 const viewBoxWidth = 3300
@@ -21,7 +16,6 @@ const row_max_label_length = 9
 const col_items = ["M", "T", "W", "Th", "F", "S", "Su"]
 let row_items = [];
 for(var habit in habitData){
-  console.log(habit);
   row_items.push(habitData[habit].habit_name);
 }
 
@@ -40,8 +34,8 @@ const grid_width = row_label_size + ((max_col_number+1) * col_width)
 const divider_line_style = "stroke:rgb(153,153,153);stroke-width:2"
 const heavy_divider_line_style = "stroke:rgb(153,153,153);stroke-width:4"
 
-const font_style_for_col = "font-family:\'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_col
-const font_style_for_row = "font-family:\'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_row
+const font_style_for_col = `font-family:\'Helvetica\';font-size:${font_size_for_col}px;fill:rgb(102,102,102);`
+const font_style_for_row = `font-family:\'Helvetica\';font-size:${font_size_for_row}px;fill:rgb(102,102,102);`
 
 let svg = ""
 svg += `<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n`
