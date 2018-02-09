@@ -4,6 +4,10 @@ const moment = require('moment')
 let habitData = require('./example_data/habits.json');
 console.log(habitData);
 
+// for(var exKey in habitData) {
+//     console.log("key:"+exKey+", value:"+habitData[exKey].habit);
+// }
+
 const file_name = "habit_weekly_jsgen"
 const viewBoxWidth = 3300
 const viewBoxHeight = 2550
@@ -15,7 +19,11 @@ const font_size_for_col = 24
 const row_max_label_length = 9
 
 const col_items = ["M", "T", "W", "Th", "F", "S", "Su"]
-const row_items = ["Habit1", "Habit2", "Habit3", "Habit4", "Habit5", "Habit5", "Habit7", "Habit8"]
+let row_items = [];
+for(var habit in habitData){
+  console.log(habit);
+  row_items.push(habitData[habit].habit_name);
+}
 
 const num_of_rows = row_items.length
 const max_row_number = num_of_rows-1
