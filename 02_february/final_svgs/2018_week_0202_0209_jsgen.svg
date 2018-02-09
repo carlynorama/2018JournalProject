@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 3300 2550" xmlns="http://www.w3.org/2000/svg">
+<style>/* <![CDATA[ */circle{fill:rgb(220,230,255);}/* ]]> */</style>
+	<g id="page_title" transform="translate(75, 257.1428571428571)">
+		<text x="0" y="0" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="start" dominant-baseline="central">Weekly Planning - Feb 2nd, 2018 to Feb 9th, 2018</text>
+		</g>
+<g id="calendar" width="2900" height="2100" transform="translate(75, 340)">
+		<g id="0202" transform="translate(0, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.61904761904762" y="55.23809523809524" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Friday</text>
+			<text x="27.61904761904762" y="110.47619047619048" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Feb 2</text>
+		</g>
+		<g id="0203" transform="translate(469.5238095238095, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.61904761904762" y="55.23809523809524" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Saturday</text>
+			<text x="27.61904761904762" y="110.47619047619048" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Feb 3</text>
+		</g>
+		<g id="0204" transform="translate(939.047619047619, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.61904761904762" y="55.23809523809524" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Sunday</text>
+			<text x="27.61904761904762" y="110.47619047619048" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Feb 4</text>
+		</g>
+		<g id="0205" transform="translate(1408.5714285714284, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.61904761904762" y="55.23809523809524" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Monday</text>
+			<text x="27.61904761904762" y="110.47619047619048" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Feb 5</text>
+		</g>
+		<g id="0206" transform="translate(1878.095238095238, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.61904761904762" y="55.23809523809524" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Tuesday</text>
+			<text x="27.61904761904762" y="110.47619047619048" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Feb 6</text>
+		</g>
+		<g id="0207" transform="translate(2347.6190476190477, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.61904761904762" y="55.23809523809524" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Wednesday</text>
+			<text x="27.61904761904762" y="110.47619047619048" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Feb 7</text>
+		</g>
+		<g id="0208" transform="translate(2817.142857142857, 0)">
+			<line x1="0" y1="0" x2="0" y2="2100" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<text x="27.61904761904762" y="55.23809523809524" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Thursday</text>
+			<text x="27.61904761904762" y="110.47619047619048" style="font-family:'Futura', 'Helvetica';font-size:55.23809523809524px;fill:rgb(102,102,102);" text-anchor="left">Feb 8</text>
+		</g>
+	</g>
+</svg>
