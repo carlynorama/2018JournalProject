@@ -8,29 +8,25 @@ tags: pvj, JSON
 
 ## Python
 
-most of this came [from MakeUseOf](https://www.makeuseof.com/tag/json-python-parsing-simple-guide/)
+most of this came from:
+- [MakeUseOf](https://www.makeuseof.com/tag/json-python-parsing-simple-guide/)
+- [pythonspot](https://pythonspot.com/json-encoding-and-decoding-with-python/)
+- [stackabuse](http://stackabuse.com/reading-and-writing-json-to-a-file-in-python/)
 
 ### Loading Data from File
 {% highlight python %}
 import json
-from pprint import pprint
 
 with open('example_data/habits.json', "r") as data_file:
     habitData = json.load(data_file)
-
-pprint(habitData)
-
-# or
-for x in habitData:
-	print(x)
 
 {% endhighlight %}
 
 ### Parsing Data
 {% highlight python %}
-for x in loaded_json:
-	print("%s: %d" % (x, loaded_json[x]))
-
+row_items = []
+for entry in habitData:
+    row_items.append(entry['habit_name'])
 {% endhighlight %}
 
 ## Javascript
@@ -63,9 +59,15 @@ console.log('This is after the read call');
 //synchronously w/ require
 let jsonData = require('./student.json');
 console.log(jsonData);  
-
 {% endhighlight %}
 
 ### Using JSON
 
 Once the data is in [this tutorial](https://www.codementor.io/codementorteam/how-to-use-json-files-in-node-js-85hndqt32) helped me use it.
+
+{% highlight javascript %}
+let row_items = [];
+for(var habit in habitData){
+  row_items.push(habitData[habit].habit_name);
+}
+{% endhighlight %}
