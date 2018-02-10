@@ -1,18 +1,9 @@
 #habit_weekly_grid.py
 import json
+import fileparser
 
-
-file_name = "habit_weekly_pygen"
-
-with open('example_data/simplesthabits.txt', "r") as data_file:
-    rawlinedata = [line.strip() for line in data_file]
-    print(rawlinedata)
-
-#cleaner
-def gethabitname(rawhabit):
-    clean_name = rawhabit.lstrip("- ")
-    print("|" + clean_name + "|")
-    return clean_name
+save_file_name = "habit_weekly_pygen"
+data_file_name = 'example_data/simplesthabits.txt'
 
 viewBoxWidth = 3300
 viewBoxHeight = 2550
@@ -22,11 +13,7 @@ font_size_for_col = 24
 row_max_label_length = 9
 
 col_items = ["M", "T", "W", "Th", "F", "S", "Su"]
-
-row_items = []
-for entry in rawlinedata:
-    cleanedentry = gethabitname(entry)
-    row_items.append(cleanedentry)
+row_items = fileparser.loaddatafromfile(data_file_name)
 
 row_range = range(0,(len(row_items))) #0 is header
 max_row_number = max(row_range)
@@ -46,7 +33,7 @@ heavy_divider_line_style = "stroke:rgb(153,153,153);stroke-width:4"
 font_style_for_col = "font-family:\'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_col
 font_style_for_row = "font-family:\'Helvetica\';font-size:%spx;fill:rgb(102,102,102);" % font_size_for_row
 
-f = open('%s.svg' % file_name, 'w')
+f = open('%s.svg' % save_file_name, 'w')
 f.write('<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n')
 f.write('<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n')
 
