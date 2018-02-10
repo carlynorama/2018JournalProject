@@ -1,7 +1,6 @@
 #yearataglanceSVG.py
 
 import datetime
-
 import calendar
 #https://docs.python.org/2/library/calendar.html
 

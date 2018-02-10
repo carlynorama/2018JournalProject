@@ -8,13 +8,34 @@ tags: pvj, JSON
 
 ## Python
 
+most of this came [from MakeUseOf](https://www.makeuseof.com/tag/json-python-parsing-simple-guide/)
+
+### Loading Data from File
 {% highlight python %}
+import json
+from pprint import pprint
+
+with open('example_data/habits.json', "r") as data_file:
+    habitData = json.load(data_file)
+
+pprint(habitData)
+
+# or
+for x in habitData:
+	print(x)
+
+{% endhighlight %}
+
+### Parsing Data
+{% highlight python %}
+for x in loaded_json:
+	print("%s: %d" % (x, loaded_json[x]))
 
 {% endhighlight %}
 
 ## Javascript
 
-### Getting the Data In
+### Loading Data from File
 Very good tutorial on different ways to bring [JSON data into Javascript](http://stackabuse.com/reading-and-writing-json-files-with-node-js/) project on StackAbuse
 
 {% highlight javascript %}

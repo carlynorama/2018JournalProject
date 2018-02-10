@@ -1,5 +1,14 @@
+import json
+
 
 file_name = "habit_weekly_pygen"
+
+with open('example_data/habits.json', "r") as data_file:
+    habitData = json.load(data_file)
+
+for x in habitData:
+	print(habitData[x])
+
 viewBoxWidth = 3300
 viewBoxHeight = 2550
 
