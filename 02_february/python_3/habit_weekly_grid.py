@@ -13,7 +13,7 @@ font_size_for_col = 24
 row_max_label_length = 9
 
 col_items = ["M", "T", "W", "Th", "F", "S", "Su"]
-row_items = fileparser.loaddatafromfile(data_file_name)
+row_items = fileparser.loadnamesonlyfromfile(data_file_name)
 
 row_range = range(0,(len(row_items))) #0 is header
 max_row_number = max(row_range)
