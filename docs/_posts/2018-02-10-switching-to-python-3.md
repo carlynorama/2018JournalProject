@@ -26,9 +26,12 @@ I this project for now is not using a [virtual environment](http://docs.python-g
 ## What doesn't run
 
 ### habit_weekly_grid.py
- no problems
+no problems
 
-### monthly_bullets
+### weekly_layout_1.py
+no problems
+
+### monthly_bullets.py
 
 #### error message
 
