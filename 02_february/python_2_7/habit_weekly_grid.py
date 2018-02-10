@@ -1,6 +1,8 @@
 #habit_weekly_grid.py
 import json
+import wtf
 
+wtf.world()
 
 file_name = "habit_weekly_pygen"
 
