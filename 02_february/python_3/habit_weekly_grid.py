@@ -10,8 +10,10 @@ with open('example_data/simplesthabits.txt', "r") as data_file:
 
 ####cleaner
 def gethabitname(rawhabit):
-    print("Happy Birthday, dear " + rawhabit + ".")
-    return "all clean!"
+    clean_name = rawhabit.rstrip()
+    clean_name = clean_name.lstrip("- ")
+    print("|" + clean_name + "|")
+    return clean_name
 
 viewBoxWidth = 3300
 viewBoxHeight = 2550
