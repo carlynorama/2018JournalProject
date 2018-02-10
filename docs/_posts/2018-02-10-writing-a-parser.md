@@ -22,7 +22,7 @@ These files are so simple I don't really need a parser with a grammar, but that 
 - <https://www.youtube.com/watch?v=224plb3bCog&ab_channel=Computerphile>
 
 ## Step 1: Python
-### Option 1
+### Option 1 - Load raw, then clean
   {% highlight python %}
   with open('example_data/simplesthabits.txt', "r") as data_file:
       rawlinedata = data_file.readlines()
@@ -36,7 +36,7 @@ These files are so simple I don't really need a parser with a grammar, but that 
       return clean_name
 {% endhighlight %}
 
-### Option 2
+### Option 2 - Load with line strip, then polish off front
 {% highlight python %}
 with open('example_data/simplesthabits.txt', "r") as data_file:
     rawlinedata = [line.strip() for line in data_file]
@@ -49,8 +49,10 @@ def gethabitname(rawhabit):
     return clean_name
 {% endhighlight %}
 
-### Option 3 - make a module
-https://www.digitalocean.com/community/tutorials/how-to-write-modules-in-python-3
+### Option 3 - modularized
+[Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-write-modules-in-python-3).
+
+Don't use underscores in file names. 
 
 #### In main file
 {% highlight python %}
