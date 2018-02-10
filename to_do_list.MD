@@ -1,11 +1,10 @@
 ##Next
-- pull habits from json, python
-- pull habits from plainer text
-- grid fill
+- [ ] pull habits from plainer text ( python | javascript )
+- [ ] grid fill
+- [ ] half letter layouts
 
 ##Nice to have
 - monthly habit tracker (habits list X 12 months)
-
 - line rule fill
 - line rule (alternate fill)
 
@@ -25,4 +24,5 @@
 - Habit Tracker: Weekly Grid - javascript
 - Habit Tracker: Annual Grid - javascript
 - fix fonts in javascript weekly_grid
-- - pull habits from json, javascript
+- pull habits from json, javascript
+- pull habits from json, python
