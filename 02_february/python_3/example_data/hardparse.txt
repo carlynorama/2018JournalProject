@@ -1,0 +1,5 @@
+#### List Name ####
+- [ ] item one (mwf) @internet | random helpful notes
+- [ ] item two (trs) @house #category | about something or other
+- [ ] item three (u) @lab | that i might want to remember
+- [ ] item four @errand

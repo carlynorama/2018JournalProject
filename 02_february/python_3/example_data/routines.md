@@ -1,5 +1,5 @@
 #### List Name ####
-- [ ] item one  (mwf) @internet | random helpful notes
+- [ ] item one (mwf) @internet | random helpful notes
 - [ ] item two (trs) @house #category | about something or other
 - [ ] item three (u) @lab | that i might want to remember
 - [ ] item four @errand
@@ -11,10 +11,17 @@
 - item four
 
 #### Step Two ####
-- [ ] item one
-- [ ] item two
-- [ ] item three
-- [ ] item four
+- item one | notes
+- item two
+- item three
+- item four
+
+#### Step Two ####
+- item one (mwf) | notes
+- item two (trs)
+- item three (u)
+- item four ()
+
 
 #### Step Three ####
 - [ ] item one | notes
