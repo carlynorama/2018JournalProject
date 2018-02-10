@@ -5,13 +5,12 @@ import json
 file_name = "habit_weekly_pygen"
 
 with open('example_data/simplesthabits.txt', "r") as data_file:
-    rawlinedata = data_file.readlines()
+    rawlinedata = [line.strip() for line in data_file]
     print(rawlinedata)
 
-####cleaner
+#cleaner
 def gethabitname(rawhabit):
-    clean_name = rawhabit.rstrip()
-    clean_name = clean_name.lstrip("- ")
+    clean_name = rawhabit.lstrip("- ")
     print("|" + clean_name + "|")
     return clean_name
 
@@ -24,7 +23,7 @@ row_max_label_length = 9
 
 col_items = ["M", "T", "W", "Th", "F", "S", "Su"]
 
-row_items = ["nothing", "to", "see", "here"]
+row_items = []
 for entry in rawlinedata:
     cleanedentry = gethabitname(entry)
     row_items.append(cleanedentry)

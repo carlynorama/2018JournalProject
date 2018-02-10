@@ -2,41 +2,33 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 3300 2550" xmlns="http://www.w3.org/2000/svg">
 <g id="tracker" transform="translate(100, 100)">
-			<line x1="288" y1="0" x2="288" y2="528.0" style="stroke:rgb(153,153,153);stroke-width:4" />
+			<line x1="288" y1="0" x2="288" y2="336.0" style="stroke:rgb(153,153,153);stroke-width:4" />
 		<text x="324.0" y="24.0" style="font-family:'Helvetica';font-size:24px;fill:rgb(102,102,102);" text-anchor="middle" dominant-baseline="middle">M</text>
-			<line x1="360" y1="0" x2="360" y2="528.0" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<line x1="360" y1="0" x2="360" y2="336.0" style="stroke:rgb(153,153,153);stroke-width:2" />
 		<text x="396.0" y="24.0" style="font-family:'Helvetica';font-size:24px;fill:rgb(102,102,102);" text-anchor="middle" dominant-baseline="middle">T</text>
-			<line x1="432" y1="0" x2="432" y2="528.0" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<line x1="432" y1="0" x2="432" y2="336.0" style="stroke:rgb(153,153,153);stroke-width:2" />
 		<text x="468.0" y="24.0" style="font-family:'Helvetica';font-size:24px;fill:rgb(102,102,102);" text-anchor="middle" dominant-baseline="middle">W</text>
-			<line x1="504" y1="0" x2="504" y2="528.0" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<line x1="504" y1="0" x2="504" y2="336.0" style="stroke:rgb(153,153,153);stroke-width:2" />
 		<text x="540.0" y="24.0" style="font-family:'Helvetica';font-size:24px;fill:rgb(102,102,102);" text-anchor="middle" dominant-baseline="middle">Th</text>
-			<line x1="576" y1="0" x2="576" y2="528.0" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<line x1="576" y1="0" x2="576" y2="336.0" style="stroke:rgb(153,153,153);stroke-width:2" />
 		<text x="612.0" y="24.0" style="font-family:'Helvetica';font-size:24px;fill:rgb(102,102,102);" text-anchor="middle" dominant-baseline="middle">F</text>
-			<line x1="648" y1="0" x2="648" y2="528.0" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<line x1="648" y1="0" x2="648" y2="336.0" style="stroke:rgb(153,153,153);stroke-width:2" />
 		<text x="684.0" y="24.0" style="font-family:'Helvetica';font-size:24px;fill:rgb(102,102,102);" text-anchor="middle" dominant-baseline="middle">S</text>
-			<line x1="720" y1="0" x2="720" y2="528.0" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<line x1="720" y1="0" x2="720" y2="336.0" style="stroke:rgb(153,153,153);stroke-width:2" />
 		<text x="756.0" y="24.0" style="font-family:'Helvetica';font-size:24px;fill:rgb(102,102,102);" text-anchor="middle" dominant-baseline="middle">Su</text>
-			<line x1="792" y1="0" x2="792" y2="528.0" style="stroke:rgb(153,153,153);stroke-width:2" />
+			<line x1="792" y1="0" x2="792" y2="336.0" style="stroke:rgb(153,153,153);stroke-width:2" />
 			<line x1="0" y1="48.0" x2="792" y2="48.0" style="stroke:rgb(153,153,153);stroke-width:4" />
-		<text x="256" y="72.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">nothing</text>
+		<text x="256" y="72.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 1</text>
 			<line x1="0" y1="96.0" x2="792" y2="96.0" style="stroke:rgb(153,153,153);stroke-width:2" />
-		<text x="256" y="120.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">to</text>
+		<text x="256" y="120.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 2</text>
 			<line x1="0" y1="144.0" x2="792" y2="144.0" style="stroke:rgb(153,153,153);stroke-width:2" />
-		<text x="256" y="168.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">see</text>
+		<text x="256" y="168.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 3</text>
 			<line x1="0" y1="192.0" x2="792" y2="192.0" style="stroke:rgb(153,153,153);stroke-width:2" />
-		<text x="256" y="216.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">here</text>
+		<text x="256" y="216.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 4</text>
 			<line x1="0" y1="240.0" x2="792" y2="240.0" style="stroke:rgb(153,153,153);stroke-width:2" />
-		<text x="256" y="264.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 1</text>
+		<text x="256" y="264.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 5</text>
 			<line x1="0" y1="288.0" x2="792" y2="288.0" style="stroke:rgb(153,153,153);stroke-width:2" />
-		<text x="256" y="312.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 2</text>
+		<text x="256" y="312.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 6</text>
 			<line x1="0" y1="336.0" x2="792" y2="336.0" style="stroke:rgb(153,153,153);stroke-width:2" />
-		<text x="256" y="360.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 3</text>
-			<line x1="0" y1="384.0" x2="792" y2="384.0" style="stroke:rgb(153,153,153);stroke-width:2" />
-		<text x="256" y="408.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 4</text>
-			<line x1="0" y1="432.0" x2="792" y2="432.0" style="stroke:rgb(153,153,153);stroke-width:2" />
-		<text x="256" y="456.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 5</text>
-			<line x1="0" y1="480.0" x2="792" y2="480.0" style="stroke:rgb(153,153,153);stroke-width:2" />
-		<text x="256" y="504.0" style="font-family:'Helvetica';font-size:32px;fill:rgb(102,102,102);" text-anchor="end" dominant-baseline="middle">habit 6</text>
-			<line x1="0" y1="528.0" x2="792" y2="528.0" style="stroke:rgb(153,153,153);stroke-width:2" />
 	</g>
 </svg>
