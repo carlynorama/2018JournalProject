@@ -52,7 +52,7 @@ def gethabitname(rawhabit):
 ### Option 3 - modularized
 [Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-write-modules-in-python-3).
 
-Don't use underscores in file names. 
+Don't use underscores in file names.
 
 #### In main file
 {% highlight python %}
@@ -82,3 +82,5 @@ def getitemname(rawitem):
     print("|" + clean_name + "|")
     return clean_name
 {% endhighlight %}
+
+## Step 1: Javascript
