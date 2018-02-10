@@ -2,7 +2,7 @@
 layout: post
 title:  "Writing a Parser - Getting Started"
 date:   2018-02-10 08:07:01 -0600
-tags: text, pvj
+tags: text, pvj, parser
 ---
 
 json and YAML are ugly. I want a simpler looking files, but maybe with still some rich content. Kinda like [ToDo.txt](https://github.com/todotxt), but I don't like that file format either.
