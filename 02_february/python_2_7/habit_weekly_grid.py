@@ -6,8 +6,7 @@ file_name = "habit_weekly_pygen"
 with open('example_data/habits.json', "r") as data_file:
     habitData = json.load(data_file)
 
-for x in habitData:
-	print(habitData[x])
+
 
 viewBoxWidth = 3300
 viewBoxHeight = 2550
@@ -17,7 +16,10 @@ font_size_for_col = 24
 row_max_label_length = 9
 
 col_items = ["M", "T", "W", "Th", "F", "S", "Su"]
-row_items = ["Habit1", "Habit2", "Habit3", "Habit4", "Habit5", "Habit5", "Habit7", "Habit8"]
+
+row_items = []
+for entry in habitData:
+    row_items.append(entry['habit_name'])
 
 row_range = range(0,(len(row_items))) #0 is header
 max_row_number = max(row_range)
