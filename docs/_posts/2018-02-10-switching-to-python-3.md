@@ -21,7 +21,7 @@ brew install python3
 python3 myscript.py
 {% endhighlight %}
 
-I this project for now is not using a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref).
+This project for now is not using a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref).
 
 ## What doesn't run
 
