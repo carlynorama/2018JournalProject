@@ -4,7 +4,8 @@ import fileparser
 
 save_file_name = "parsetest_pygen"
 #data_file_name = 'example_data/hardparse.txt'
-data_file_name = 'example_data/bujostyle_data.txt'
+#data_file_name = 'example_data/bujostyle_data.txt'
+data_file_name = 'example_data/bujostyle_no_headers.txt'
 
 test_data = fileparser.loaddatafromfile(data_file_name)
 for item in test_data:

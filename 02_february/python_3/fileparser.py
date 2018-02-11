@@ -25,7 +25,8 @@ def loaddatafromfile(data_file_path):
         if entry:
             if entry[0] in allowedFirst:
                 cleanedentry = getitemdictionary(entry)
-                cleanedentry["sublist"] = header
+                if header:
+                    cleanedentry["sublist"] = header
                 returnarray.append(cleanedentry)
             if entry[0] == "#":
                 header = getheader(entry)
