@@ -2,6 +2,7 @@
 
 import re
 special="-#|[]()@"
+allowedFirst="xX!><Oa-?0123456789ø·•"
 
 def loadnames(data_file_path):
     returnarray = []
@@ -9,7 +10,7 @@ def loadnames(data_file_path):
         rawlinedata = [line.strip() for line in data_file]
         #print(rawlinedata)
     for entry in rawlinedata:
-        if entry and entry[0] == special[0]:
+        if entry and entry[0] in allowedFirst:
             cleanedentry = getname(entry)
             returnarray.append(cleanedentry)
     return returnarray
@@ -20,7 +21,7 @@ def loaddatafromfile(data_file_path):
         rawlinedata = [line.strip() for line in data_file]
         #print(rawlinedata)
     for entry in rawlinedata:
-        if entry and entry[0] == special[0]:
+        if entry and entry[0] in allowedFirst:
             cleanedentry = getitemdictionary(entry)
             returnarray.append(cleanedentry)
     return returnarray
@@ -43,12 +44,17 @@ def getitemdictionary(rawitem):
     return itemdictionary
 
 def getname(rawstring):
-    regex = r"-( \[.*\] | )(.*?)[@#|(]"
-    match = re.search(regex, rawstring)
+    regexdefault = r"-( \[.*\] | )(.*?)[@#|(]"
+    regexbujo = r"^([xX!><Oa\-?0123456789ø·•]*)\s(.*?)[@#|(]"
+    match = re.search(regexdefault, rawstring)
     if match:
         name = match.group(2).strip()
     else:
-        name = ""
+        match = re.search(regexbujo, rawstring)
+        if match:
+            name = statuslookup(match.group(2))
+        else:
+            name = ""
     return name
 
 def getnote(rawstring):
@@ -92,10 +98,15 @@ def statuslookup(x):
 #    }.get(x, "unknown mark")
 
 def getstatus(rawstring):
-    regex = r"\[(.*)\]"
-    match = re.search(regex, rawstring)
+    regexdefault = r"\[(.*)\]"
+    regexbujo = r"^([xX!><Oa\-?0123456789ø·•]*)\s"
+    match = re.search(regexdefault, rawstring)
     if match:
         status = statuslookup(match.group(1))
     else:
-        status = ""
+        match = re.search(regexbujo, rawstring)
+        if match:
+            status = statuslookup(match.group(1))
+        else:
+            status = ""
     return status
