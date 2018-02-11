@@ -1,9 +1,14 @@
 const fs = require('fs')
 const moment = require('moment')
+const jparser = require('./jparser.js');
 
-let habitData = require('./example_data/habits.json');
+const input_file_name = "./example_data/simplehabits.txt"
+const output_file_name = "habit_weekly_jsgen"
 
-const file_name = "habit_weekly_jsgen"
+console.log(jparser.hello)
+const linedata = jparser.loaddatafromfile(input_file_name)
+console.log(linedata)
+
 const viewBoxWidth = 3300
 const viewBoxHeight = 2550
 const place_on_page_x = 100
@@ -14,10 +19,10 @@ const font_size_for_col = 24
 const row_max_label_length = 9
 
 const col_items = ["M", "T", "W", "Th", "F", "S", "Su"]
-let row_items = [];
-for(var habit in habitData){
-  row_items.push(habitData[habit].habit_name);
-}
+const row_items = ["M", "T", "W", "Th", "F", "S", "Su"];
+// for(var habit in habitData){
+//   row_items.push(habitData[habit].habit_name);
+// }
 
 const num_of_rows = row_items.length
 const max_row_number = num_of_rows-1
@@ -68,7 +73,7 @@ for (let r=0; r < num_of_rows; r++) {
 svg += `\t</g>\n` //end grid
 svg += '</svg>'
 
-fs.writeFile(`${file_name}.svg`, svg, (err) => {  
+fs.writeFile(`${output_file_name}.svg`, svg, (err) => {  
     // throws an error, you could also catch it here
     if (err) throw err;
 
