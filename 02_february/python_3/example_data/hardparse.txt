@@ -1,5 +1,13 @@
 #### List Name ####
-- [ ] item one (mwf) @internet | random helpful notes
-- [ ] item two (trs) @house #category | about something or other
-- [ ] item three (u) @lab | that i might want to remember
-- [ ] item four @errand
+- [x] item one (mwf) @internet | random helpful notes
+- [X] item two @house #category | about something or other
+- item three (u) @lab | that i might want to remember
+- [!] item four (6)
+
+#### Second List Name ####
+- [3] item five (mwf) @internet | random helpful notes
+item six (trs) #category | about something or other
+- [*] item seven (u) @lab | that i might want to remember
+- [>] item eight @errand
+- [alice] item nine (u) @lab | that i might want to remember
+- [ ] item ten @errand
