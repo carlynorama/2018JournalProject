@@ -17,3 +17,4 @@ https://docs.python.org/3/howto/regex.html#regex-howto
 https://www.regular-expressions.info/lookaround.html
 https://www.regular-expressions.info/python.html
 https://bytebaker.com/2008/11/03/switch-case-statement-in-python/
+http://www.rexegg.com/regex-cookbook.html
