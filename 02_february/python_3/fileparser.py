@@ -1,27 +1,30 @@
 # What the heck
 
 import re
+
 special="-#|[]()@"
 allowedFirst="xX!><Oa-D?0123456789ø·•"
 
-def loadnames(data_file_path):
-    returnarray = []
+
+def loaddatafromfile(data_file_path):
+    linedata = []
     with open(data_file_path, "r") as data_file:
-        rawlinedata = [line.strip() for line in data_file]
-        #print(rawlinedata)
-    for entry in rawlinedata:
+        linedata = [line.strip() for line in data_file]
+    return linedata
+        #print(linedata)
+
+def getnames(linedata):
+    returnarray = []
+    for entry in linedata:
         if entry and entry[0] in allowedFirst:
             cleanedentry = getname(entry)
             returnarray.append(cleanedentry)
     return returnarray
 
-def loaddatafromfile(data_file_path):
+def getitems(linedata):
     returnarray = []
     header = ""
-    with open(data_file_path, "r") as data_file:
-        rawlinedata = [line.strip() for line in data_file]
-        #print(rawlinedata)
-    for entry in rawlinedata:
+    for entry in linedata:
         if entry:
             if entry[0] in allowedFirst:
                 cleanedentry = getitemdictionary(entry)
