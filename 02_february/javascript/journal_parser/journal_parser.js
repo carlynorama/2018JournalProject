@@ -2,12 +2,16 @@ const fs = require('fs')
 const moment = require('moment')
 const jparser = require('./jparser.js');
 
-const input_file_name = "./example_data/simplehabits.txt"
+const input_file_name = "./example_data/simplesthabits.txt"
 const output_file_name = "habit_weekly_jsgen"
 
+function callback(filedata) {
+  console.log("Howdy Carlyn!", filedata);
+}
+
 console.log(jparser.hello)
-const linedata = jparser.loaddatafromfile(input_file_name)
-console.log(linedata)
+jparser.loaddatafromfile(input_file_name, callback)
+
 
 const viewBoxWidth = 3300
 const viewBoxHeight = 2550

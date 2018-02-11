@@ -1,24 +1,29 @@
 //parsing functions
 const fs = require('fs')
 
-module.exports.hello="hello"
+
 
 const special="-#|[]()@"
 const allowedFirst="xX!><Oa-D?0123456789ø·•"
 
-module.exports.loaddatafromfile = function(data_file_path) {
-    // var bufferString, bufferStringSplit;
-    // fs.readFile(data_file_path, function(err, data) {
-    //   bufferStringSplit = data;
-    //   //bufferString = data.toString();
-    //   //bufferStringSplit = bufferString.split('\n');
-    // });
-    // return bufferStringSplit
-    return data_file_path
+//module.exports.loaddatafromfile = function(data_file_path) {
+function loaddatafromfile(data_file_path, callback) {
+    var bufferString, bufferStringSplit;
+    fs.readFile(data_file_path, function(err, data) {
+      if (err) throw err;;
+      bufferString = data.toString();
+      bufferStringSplit = bufferString.split('\n');
+      callback(bufferStringSplit);
+    });
+    //return bufferStringSplit
+    //return data_file_path
 }
 
+//Expose API
+exports.hello="hello"
+exports.loaddatafromfile = loaddatafromfile;
 
-// function loaddatafromfile(data_file_path) {
+//    function loaddatafromfile(data_file_path) {
 //     var bufferString, bufferStringSplit;
 //     fs.readFile(data_file_path, function(err, data) {
 //       bufferString = data.toString();
