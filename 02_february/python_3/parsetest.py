@@ -1,6 +1,6 @@
 #habit_weekly_grid.py
 import json
-import fileparser
+import journalparser
 
 save_file_name = "parsetest_pygen"
 #data_file_name = 'example_data/hardparse.txt'
@@ -8,16 +8,16 @@ data_file_name = 'example_data/hardparse_no_headers.txt'
 #data_file_name = 'example_data/bujostyle_data.txt'
 #data_file_name = 'example_data/bujostyle_no_headers.txt'
 
-line_data = fileparser.loaddatafromfile(data_file_name)
+line_data = journalparser.loaddatafromfile(data_file_name)
 
-items = fileparser.getitems(line_data)
+items = journalparser.getitems(line_data)
 for item in items:
     print(item)
 
-sublistflag = fileparser.hassublist(line_data)
+sublistflag = journalparser.hassublist(line_data)
 print(sublistflag)
 
-sublists = fileparser.getsublists(line_data)
+sublists = journalparser.getsublists(line_data)
 for listname in sublists:
     print(listname)
 
@@ -29,7 +29,7 @@ font_size_for_col = 24
 row_max_label_length = 9
 
 col_items = ["M", "T", "W", "Th", "F", "S", "Su"]
-row_items = fileparser.getnames(line_data)
+row_items = journalparser.getnames(line_data)
 
 row_range = range(0,(len(row_items))) #0 is header
 max_row_number = max(row_range)
