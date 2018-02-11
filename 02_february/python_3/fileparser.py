@@ -17,13 +17,18 @@ def loadnames(data_file_path):
 
 def loaddatafromfile(data_file_path):
     returnarray = []
+    header = ""
     with open(data_file_path, "r") as data_file:
         rawlinedata = [line.strip() for line in data_file]
         #print(rawlinedata)
     for entry in rawlinedata:
-        if entry and entry[0] in allowedFirst:
-            cleanedentry = getitemdictionary(entry)
-            returnarray.append(cleanedentry)
+        if entry:
+            if entry[0] in allowedFirst:
+                cleanedentry = getitemdictionary(entry)
+                cleanedentry["sublist"] = header
+                returnarray.append(cleanedentry)
+            if entry[0] == "#":
+                header = getheader(entry)
     return returnarray
 
 #cleaner
@@ -39,11 +44,20 @@ def getitemdictionary(rawitem):
         itemdictionary["status"] = getstatus(brokenatnotes[0])
     if getdays(brokenatnotes[0]):
         itemdictionary["days"] = getdays(brokenatnotes[0])
-    #Takes the notes without examination. 
+    #Takes the notes without examination.
     if brokenatnotes[2]:
         itemdictionary["note"] = brokenatnotes[2].strip()
     #print(itemdictionary)
     return itemdictionary
+
+def getheader(rawstring):
+    regex = r"#### (.*?) ####"
+    match = re.search(regex, rawstring)
+    if match:
+        days = match.group(1)
+    else:
+        days = ""
+    return days
 
 def getname(rawstring):
     regexdefault = r"-( \[.*\] | )(.*?)[@#|(]"
