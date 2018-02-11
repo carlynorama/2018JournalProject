@@ -2,7 +2,7 @@
 
 import re
 special="-#|[]()@"
-allowedFirst="xX!><Oa-?0123456789ø·•"
+allowedFirst="xX!><Oa-D?0123456789ø·•"
 
 def loadnames(data_file_path):
     returnarray = []
@@ -30,6 +30,7 @@ def loaddatafromfile(data_file_path):
 def getitemdictionary(rawitem):
     itemdictionary = {}
     brokenatnotes = rawitem.partition("|")
+    #None of these check what's in the notes.
     if getname(brokenatnotes[0]):
         itemdictionary["name"] = getname(brokenatnotes[0])
     if getcontext(brokenatnotes[0]):
@@ -38,6 +39,7 @@ def getitemdictionary(rawitem):
         itemdictionary["status"] = getstatus(brokenatnotes[0])
     if getdays(brokenatnotes[0]):
         itemdictionary["days"] = getdays(brokenatnotes[0])
+    #Takes the notes without examination. 
     if brokenatnotes[2]:
         itemdictionary["note"] = brokenatnotes[2].strip()
     #print(itemdictionary)
@@ -45,7 +47,7 @@ def getitemdictionary(rawitem):
 
 def getname(rawstring):
     regexdefault = r"-( \[.*\] | )(.*?)[@#|(]"
-    regexbujo = r"^([xX!><Oa\-?0123456789ø·•]*)\s(.*?)[@#|(]"
+    regexbujo = r"^([xX!><OaD\-\[?0123456789ø·•]*)\s(.*?)[@#|(]"
     match = re.search(regexdefault, rawstring)
     if match:
         name = match.group(2).strip()
@@ -89,6 +91,7 @@ def statuslookup(x):
         '<': "scheduled",
         'O': "event",
         'a': "assigned",
+        'D': "delegated",
         '-': "archived",
         '?': "needs research",
         '1': "1st priority",

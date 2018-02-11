@@ -4,7 +4,7 @@
 - item three (u) @lab | that i might want to remember
 - [!] item four (6)
 
-#### Second Sub List Name ####
+#### Second SubList Name ####
 - [3] item five (mwf) @internet | random helpful notes
 item six (trs) #category | about something or other
 - [*] item seven (u) @lab | that i might want to remember

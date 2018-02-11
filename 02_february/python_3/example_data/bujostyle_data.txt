@@ -10,4 +10,4 @@ item six (trs) #category | about something or other
 ! item seven (u) @lab | that i might want to remember
 ? item eight @errand
 > item nine (u) @lab | that i might want to remember
-[alice]  item ten @errand
+D item ten @errand | [Alice] 
