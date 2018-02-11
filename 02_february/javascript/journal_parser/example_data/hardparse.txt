@@ -1,0 +1,13 @@
+#### Sub List Name ####
+- [x] item one (mwf) @internet | random helpful notes
+- [X] item two @house #category | about something or other
+- item three (u) @lab | that i might want to remember
+- [!] item four (6)
+
+#### Second SubList Name ####
+- [3] item five (mwf) @internet | random helpful notes
+item six (trs) #category | about something or other
+- [*] item seven (u) @lab | that i might want to remember
+- [>] item eight @errand
+- [alice] item nine (u) @lab | that i might want to remember
+- [ ] item ten @errand

@@ -1,0 +1,10 @@
+x item one (mwf) @internet | random helpful notes
+• item two @house #category | about something or other
+  three (u) @lab | that i might want to remember
+2 item four (6)
+9 item five (mwf) @internet | random helpful notes
+item six (trs) #category | about something or other
+! item seven (u) @lab | that i might want to remember
+? item eight @errand
+> item nine (u) @lab | that i might want to remember
+D item ten @errand | [Alice]
