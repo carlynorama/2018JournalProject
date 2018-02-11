@@ -21,6 +21,22 @@ def getnames(linedata):
             returnarray.append(cleanedentry)
     return returnarray
 
+def hassublist(linedata):
+    returnbool = 0
+    myarray = getsublists(linedata)
+    if myarray:
+        returnbool = 1
+    return returnbool
+
+def getsublists(linedata):
+    returnarray = []
+    header = ""
+    for entry in linedata:
+        if entry and entry[0] == "#":
+            header = getheader(entry)
+            returnarray.append(header)
+    return returnarray
+
 def getitems(linedata):
     returnarray = []
     header = ""
@@ -55,10 +71,10 @@ def getitemdictionary(rawitem):
     return itemdictionary
 
 def getheader(rawstring):
-    regex = r"#### (.*?) ####"
+    regex = r"####(.*?)####"
     match = re.search(regex, rawstring)
     if match:
-        days = match.group(1)
+        days = match.group(1).strip()
     else:
         days = ""
     return days

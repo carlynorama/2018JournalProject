@@ -4,13 +4,22 @@ import fileparser
 
 save_file_name = "parsetest_pygen"
 #data_file_name = 'example_data/hardparse.txt'
+data_file_name = 'example_data/hardparse_no_headers.txt'
 #data_file_name = 'example_data/bujostyle_data.txt'
-data_file_name = 'example_data/bujostyle_no_headers.txt'
+#data_file_name = 'example_data/bujostyle_no_headers.txt'
 
 line_data = fileparser.loaddatafromfile(data_file_name)
+
 items = fileparser.getitems(line_data)
 for item in items:
     print(item)
+
+sublistflag = fileparser.hassublist(line_data)
+print(sublistflag)
+
+sublists = fileparser.getsublists(line_data)
+for listname in sublists:
+    print(listname)
 
 viewBoxWidth = 3300
 viewBoxHeight = 2550
