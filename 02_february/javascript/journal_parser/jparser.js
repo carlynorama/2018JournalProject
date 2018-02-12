@@ -19,29 +19,34 @@ function loaddatafromfile(data_file_path, callback) {
     //return data_file_path
 }
 
+function getnames(linedata, callback) {
+    returnarray = [];
+    for (const entry of linedata) {
+      console.log(entry);
+      try {
+          if(entry == "") throw "empty";
+          if (allowedFirst.includes(entry.charAt(0))) {
+            cleanedentry = getname(entry)
+            returnarray.push(cleanedentry)
+          }
+      }
+      catch(err) {
+          console.log("Line doesn't have name b/c", err);
+      }
+    }
+    callback(returnarray);
+}
+
+
+
 //Expose API
-exports.hello="hello"
+exports.hello="hello";
 exports.loaddatafromfile = loaddatafromfile;
+exports.getnames = getnames;
 
-//    function loaddatafromfile(data_file_path) {
-//     var bufferString, bufferStringSplit;
-//     fs.readFile(data_file_path, function(err, data) {
-//       bufferString = data.toString();
-//       bufferStringSplit = bufferString.split('\n');
-//     });
-//     return bufferStringSplit
-//         //print(linedata)
-// }
 
-// function getnames(linedata):
-//     returnarray = []
-//     for entry in linedata:
-//         if entry and entry[0] in allowedFirst:
-//             cleanedentry = getname(entry)
-//             returnarray.append(cleanedentry)
-//     return returnarray
-// }
-//
+
+
 // function hassublist(linedata) {
 //     returnbool = 0
 //     myarray = getsublists(linedata)
@@ -104,20 +109,24 @@ exports.loaddatafromfile = loaddatafromfile;
 //     return days
 // }
 //
-// function getname(rawstring) {
-//     regexdefault = r"-( \[.*\] | )(.*?)[@#|(]"
-//     regexbujo = r"^([xX!><OaD\-\[?0123456789ø·•]*)\s(.*?)[@#|(]"
-//     match = re.search(regexdefault, rawstring)
-//     if match:
-//         name = match.group(2).strip()
-//     else:
-//         match = re.search(regexbujo, rawstring)
-//         if match:
-//             name = statuslookup(match.group(2))
-//         else:
-//             name = ""
-//     return name
-// }
+function getname(rawstring) {
+    let name = "";
+    const regex = /- (.*?)([#|[(@]|$)/g;
+    const regexdefault = /-( \[.*\] | )(.*?)([@#|(]|$)/g;
+    const regexbujo = /^([xX!><OaD\-\[?0123456789ø·•]*)\s(.*?)([#|[(@]|$)/g;
+    const str = rawstring;
+    var match = regexdefault.exec(str);
+    if (match) {
+      //console.log(match);
+      name = match[2];
+    } else {
+      match = regexbujo.exec(str);
+      if (match) {
+        name = match[2];
+      }
+    }
+    return name
+}
 //
 // function getnote(rawstring) {
 //     note = rawstring.partition("|")[2].strip()
