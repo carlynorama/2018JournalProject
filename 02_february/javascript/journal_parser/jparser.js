@@ -22,7 +22,7 @@ function loaddatafromfile(data_file_path, callback) {
 function getnames(linedata, callback) {
     returnarray = [];
     for (const entry of linedata) {
-      console.log(entry);
+      //console.log(entry);
       try {
           if(entry == "") throw "empty";
           if (allowedFirst.includes(entry.charAt(0))) {
